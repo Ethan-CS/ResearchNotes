@@ -29,5 +29,4 @@ Proposition: let $\omega(n)\geq0$ be s.t. $\omega(n)\rightarrow\infty$ and $\ome
 **Consider:** will "disconnected with high probability" be enough for us to claim this is an upper bound on the probabilities we can use our equation generation procedure on for ER graphs? Or can we show that this will be infeasible in enough places to make this a bad upper bound?
 
 
-**Source:** _Connected components in Erdos-Renyi random graphs,_ Karen Gunderson, 2013 (lecture notes for the course MATH36201 Complex Networks that Gunderson taught that year at Bristol University, although Gunderson is a big name in this type of work so probably has a paper with these results in too).
-
+**Source:** _Connected components in Erdos-Renyi random graphs,_ Karen Gunderson, 2013 (lecture notes for the course MATH36201 Complex Networks that Gunderson taught that year at Bristol University, although Gunderson is a big name in this field so probably has a paper or something similar with these results in too).
