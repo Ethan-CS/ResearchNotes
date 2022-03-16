@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022/202203151751 Equation Generation Experiments.md",
+            "file": "2022/202203161023 Current Research Questions.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/202203151751 Equation Generation Experiments.md",
+                "file": "2022/202203161023 Current Research Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022/202203151751 Equation Generation Experiments.md"
+                "file": "2022/202203161023 Current Research Questions.md"
               }
             }
           }
@@ -99,15 +99,15 @@
   },
   "active": "d3df32e1b029d7e5",
   "lastOpenFiles": [
-    "2022/202203151751 Equation Generation Experiments.md",
+    "2022/202203161023 Current Research Questions.md",
+    "2022/202201242216 Upper Bound for Paths.md",
     "2022/202202211752 Combinatorial Subgraph Searching.md",
     "2022/202203021614 Pseudocode for Equation Generation.md",
-    "2022/202201242216 Upper Bound for Paths.md",
+    "2022/202203151751 Equation Generation Experiments.md",
     "2020-21/Reading/Epidemiology/SIR Models/Simulating SIR Processes on networks/0. Meta.md",
     "2020-21/Reading/Epidemiology/SIR Models/2009_Book_MathematicalAndStatisticalEsti.pdf",
     "2020-21/Reading/Epidemiology/COVID/Under-reporting Covid/0. Info.md",
     "2020-21/Reading/Epidemiology/Modelling Stochastic Processes/2. Methods.md",
-    "2020-21/Reading/Epidemiology/Modelling Stochastic Processes/1. Introduction.md",
-    "2020-21/Reading/Epidemiology/Modelling Stochastic Processes/0. Meta.md"
+    "2020-21/Reading/Epidemiology/Modelling Stochastic Processes/1. Introduction.md"
   ]
 }
