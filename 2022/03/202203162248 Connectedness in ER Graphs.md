@@ -20,7 +20,7 @@ Now,
 $$n(1-p)^{n-1}\approx n\textrm{e}^{-pn}=\textrm{e}^{\log{(n)}-pn},$$ 
 meaning when $p<<\log(n)/n$ we may expect (on average) few isolated vertices. 
 
-Proposition: let $\omega(n)\geq0$ be s.t. $\omega(n)\rightarrow\infty$ and $\omega(n)\leq\log(\log(n)). and $$p(n)$ be $p(n)=(\log(n)-\omega(n))/n.$ Then, $G_{n,p}$ is disconnected with high probability.
+Proposition: let $\omega(n)\geq0$ be s.t. $\omega(n)\rightarrow\infty$ and $\omega(n)\leq\log(\log(n))$ and $p(n)$ be $p(n)=(\log(n)-\omega(n))/n.$ Then, $G_{n,p}$ is disconnected with high probability.
 
 (Proof not too difficult - use Chebyshev's Inequality)
 
