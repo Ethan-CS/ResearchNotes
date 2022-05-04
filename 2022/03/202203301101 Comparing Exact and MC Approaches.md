@@ -26,4 +26,5 @@ I've now written the necessary code for Monte Carlo simulations. How should I no
  
 **Consider:**
 - Fix equation generation code to ensure generated equations are correct and can be solved
+	- I think a better data structure for equations would go a long way here!
 - Write a new driver method to follow above process for comparisons, storing the times in some analysable format (e.g. csv is a reasonable start point)
