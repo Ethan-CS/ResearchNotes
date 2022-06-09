@@ -24,11 +24,13 @@ Things I could/should have statements about:
 - Agency in (simulation-based and formal) models of disease
 	- How do we believe this 'improves' these models?
 	- Any trade-offs, e.g. complexity?
+	- Conclusions about defence strategies
 - Formal modelling (dynamical approach)
-	- Vanilla: feasible for (such and such) graphs
-	- Cut-vertex sets: feasible for (some more) graphs
-	- Path/tree decomposition: feasible for (yet more) graphs
-	- Complexity trade-offs from using these decompositions? Still worth it?
+	- Feasibility:
+		- Vanilla: feasible for (such and such) graphs
+		- Cut-vertex sets: feasible for (some more) graphs
+		- Path/tree decomposition: feasible for (yet more) graphs
+	- Complexity trade-offs from using decompositions? Still worth it?
 	- Why bother with this approach in the first place?
 
 
