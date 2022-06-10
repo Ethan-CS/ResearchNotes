@@ -12,7 +12,7 @@ Status : #triage
 
 ### Questions & thoughts:
 
-Draft
+(First draft)
 
 Features of agency introduced to existing models of disease yields more contextual results, relevant to informing those tasked with slowing the spread of infections in particular populations.
 
@@ -27,9 +27,6 @@ Dynamical compartmental models on graphs are computationally feasible on small g
 -----
  
 **Consider:**
+- Have I included everything?
+- Need to make more concise
 
-
-**Source:** 
-
-
-**Reference:** 
