@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022/06/202206081650 Thesis Statement Rewriting.md",
+            "file": "2022/06/202206281830 Num Eqns SIR Cycle.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "confere",
+                "query": "Kiss",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/06/202206081650 Thesis Statement Rewriting.md",
+                "file": "2022/06/202206281830 Num Eqns SIR Cycle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022/06/202206081650 Thesis Statement Rewriting.md"
+                "file": "2022/06/202206281830 Num Eqns SIR Cycle.md"
               }
             }
           }
@@ -99,15 +99,15 @@
   },
   "active": "d3df32e1b029d7e5",
   "lastOpenFiles": [
+    "2022/06/202206281830 Num Eqns SIR Cycle.md",
+    "2022/06/202206281754 Num Eqns SIR on Path.md",
+    "2022/06/202206281827 Master Equation.md",
+    "2022/06/202206281759 Num Subpaths Result.md",
+    "dLtUYeq3TFqdSbDvf7ijuA.md",
+    "2022/06/202206281607 Short biography.md",
+    "2022/06/202206131024 Thesis Statement Drafting 2.md",
+    "2022/06/202206091637 Thesis Statement Drafting.md",
     "2022/06/202206081650 Thesis Statement Rewriting.md",
-    "2022/05/202205131208 Cut-vertex closures.md",
-    "2022/05/202205131153 Pre-processing graphs.md",
-    "2022/01/202201242216 Upper Bound for Paths.md",
-    "2022/03/202203161023 Current Research Questions.md",
-    "2022/05/202205061025 An Alg for Path Decomp.md",
-    "2022/05/202205041439 Path Decomposition.md",
-    "2022/05/Untitled.md",
-    "2022/03/202203281508 Monte Carlo Simulation.md",
-    "2022/03/202203281402 Experimental Procedure.md"
+    "2020-21/LitReviews/202104141040 Closures.md"
   ]
 }

@@ -1,4 +1,4 @@
-Tags :
+Tags : #ThesisStatement #Research #ResearchQuestions #Writing
 Zettel :  20220608-1650
 Status : #triage 
 

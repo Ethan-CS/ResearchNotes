@@ -1,6 +1,6 @@
-Tags :
+Tags : #ThesisStatement #Research #ResearchQuestions #Writing
 Zettel :  20220613-1024
-Status : #triage 
+Status : #complete
 
 -----
 
