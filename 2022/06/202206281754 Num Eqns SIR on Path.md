@@ -17,9 +17,9 @@ Proposition: the number of equations required to describe an $SIR$ model on a pa
 ## Prerequisites
 
 - Proof that the number of subpaths on $l$ vertices in a path on $n\geq l$ vertices is given by $n-(l-1)$.
-    - Proof: [sub-paths result]()
+    - Proof: [sub-paths result](obsidian://open?vault=ResearchNotes&file=2022%2F06%2F202206281759%20Num%20Subpaths%20Result)
 - Master equation for deriving equations for subsystem states
-    - Info: [Master Equation]()
+    - Info: [Master Equation](obsidian://open?vault=ResearchNotes&file=2022%2F06%2F202206281827%20Master%20Equation)
     - Source[^1]
 
 ## Proof

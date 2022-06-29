@@ -17,11 +17,12 @@ Proposition: the number of equations required to describe an $SIR$ model on a cy
 ## Prerequisites
 
 - Master equation for deriving equations for (sub)system states
-    - Info: [Master Equation](/VTakm5hUTvypyZ_8XHWz6w)
+    - Info: [Master Equation](obsidian://open?vault=ResearchNotes&file=2022%2F06%2F202206281827%20Master%20Equation)
     - Source[^1]
 
 ## Proof
 
+TODO (type up from handwritten notes)
 
 
 
