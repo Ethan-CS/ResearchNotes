@@ -7,8 +7,12 @@
         "id": "d3df32e1b029d7e5",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "RSE Project/202207161515 Initial Planning.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Kiss",
+                "query": "confere",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "RSE Project/202207161515 Initial Planning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -80,7 +85,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "RSE Project/202207161515 Initial Planning.md"
+              }
             }
           }
         ]
@@ -92,15 +99,15 @@
   },
   "active": "d3df32e1b029d7e5",
   "lastOpenFiles": [
-    "2022/06/202206291149.md",
-    "2022/06/202206281830 Num Eqns SIR Cycle.md",
+    "RSE Project/202207161515 Initial Planning.md",
+    "2022/06/202207010853 Thesis Statement Final.md",
     "2022/06/202206281754 Num Eqns SIR on Path.md",
-    "2022/06/202206281607 Short biography.md",
-    "2022/06/202206281759 Num Subpaths Result.md",
+    "2022/06/202206281830 Num Eqns SIR Cycle.md",
     "2022/06/202206281827 Master Equation.md",
-    "VTakm5hUTvypyZ_8XHWz6w.md",
-    "dLtUYeq3TFqdSbDvf7ijuA.md",
+    "2022/06/202206281759 Num Subpaths Result.md",
+    "2022/07/202207041349 UB Num of equations.md",
     "2022/06/202206131024 Thesis Statement Drafting 2.md",
-    "2022/06/202206091637 Thesis Statement Drafting.md"
+    "202207010853.md",
+    "2022/06/202206081650 Thesis Statement Rewriting.md"
   ]
 }
