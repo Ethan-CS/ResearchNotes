@@ -4,6 +4,7 @@
   "switcher",
   "graph",
   "backlink",
+  "canvas",
   "page-preview",
   "templates",
   "note-composer",
@@ -13,6 +14,5 @@
   "outline",
   "word-count",
   "slides",
-  "open-with-default-app",
   "file-recovery"
 ]
