@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2a832f249d4c3dbd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.4"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,6 +66,14 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "aedb618c645439f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           }
         ]
@@ -116,7 +135,7 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "df8921216f5e1b34",
+  "active": "2a832f249d4c3dbd",
   "lastOpenFiles": [
     "2022/06/202206281830 Num Eqns SIR Cycle.md",
     "2022/07/202207041349 UB Num of equations.md",
