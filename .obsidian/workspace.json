@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022/06/202207010853 Thesis Statement Final.md",
+                "file": "2022/06/202206281827 Master Equation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/06/202207010853 Thesis Statement Final.md",
+                "file": "2022/06/202206281827 Master Equation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022/06/202207010853 Thesis Statement Final.md"
+                "file": "2022/06/202206281827 Master Equation.md"
               }
             }
           }
@@ -139,16 +139,17 @@
   },
   "active": "2a832f249d4c3dbd",
   "lastOpenFiles": [
+    "2022/06/202206281759 Num Subpaths Result.md",
+    "2022/06/202206281754 Num Eqns SIR on Path.md",
+    "2022/06/202206281607 Short biography.md",
+    "2022/06/202207010853 Thesis Statement Final.md",
     "2022/06/202206131024 Thesis Statement Drafting 2.md",
     "2022/06/202206091637 Thesis Statement Drafting.md",
     "2022/06/202206081650 Thesis Statement Rewriting.md",
     "2022/06/202206281830 Num Eqns SIR Cycle.md",
     "2022/07/202207041349 UB Num of equations.md",
     "RSE Project/202207161515 Initial Planning.md",
-    "2022/06/202207010853 Thesis Statement Final.md",
-    "2022/06/202206281754 Num Eqns SIR on Path.md",
     "2022/06/202206281827 Master Equation.md",
-    "2022/06/202206281759 Num Subpaths Result.md",
     "202207010853.md"
   ]
 }
