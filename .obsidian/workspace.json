@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/202306211211 WDF Restrictions.md",
+                "file": "2023/202306211411 Claim about WDF Hardness.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/202306211211 WDF Restrictions.md",
+                "file": "2023/202306211411 Claim about WDF Hardness.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/202306211211 WDF Restrictions.md"
+                "file": "2023/202306211411 Claim about WDF Hardness.md"
               }
             }
           }
@@ -152,6 +152,7 @@
   "active": "211c001b153da1a1",
   "lastOpenFiles": [
     "2023/202306211211 WDF Restrictions.md",
+    "2023/202306211411 Claim about WDF Hardness.md",
     "2023",
     "2022/06/202206281827 Master Equation.md",
     "2022/06/202206281759 Num Subpaths Result.md",
