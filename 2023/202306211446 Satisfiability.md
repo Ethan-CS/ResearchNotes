@@ -24,9 +24,24 @@ Proof of Firefighter being NP-Complete on graphs with max degree 3 where fire st
  - Instance: a formula in conjunctive normal form with a set of clauses each containing up to 3 literals.
  - Question: does there exist an interpretation satisfying the formula?
 -----
-**NAE 3-SAT**
-Instance: an ordered pair $(B, C)$ composed of a set of boolean variables $B$ and a set of clauses $C$ over $B$ in CNF each containing exactly 3 
+**NAE 3-SAT (without negated literals)**
+ - Instance: an ordered pair $(B, C)$ composed of a set of boolean variables $B$ and a set of clauses $C$ over $B$ in CNF each containing exactly 3 non-negative literals.
+ - Question: does there exist an interpretation for $B$ such that every clause in $C$ contains at least one true literal and one false literal?
+-----
+**RESTRICTED NAE 3-SAT**
+ - Instance: an ordered pair $(B, C)$ consisting of a set $B$ of boolean literals and a set $C$ of clauses over $B$ in CNF where $|B|=2^m$ for some integer $m\geq2$, exactly $|C|/2$ clauses have no negated literals and the remaining clauses are obtained from these by replacing each literal with its negation.
+ - Question: is there an interpretation for $B$ such that every clause in $C$ contains at least one true literal and at least one false literal?
+-----
 
+Claim. RESTRICTED NAE 3-SAT is NP-Complete.
+
+Proof. The transformation is from NAE 3-SAT without negated literals. Consider an instance $(B, C)$ of NAE 3-SAT without negated literals. We construct an instance $(B^\prime, C^\prime)$ of RESTRICTED NAE 3-SAT. Let $m=⌈log_2|B|⌉$. Construct $B^\prime$ by adding $2m − |B|$ new boolean variables to $B$. The collection $C^\prime$ of clauses is formed from C by adding, for every c ∈ C, the clause formed by negating every literal in c. The transformation can clearly be accomplished in polynomial time.
+
+2096 S. Finbow et al. / Discrete Mathematics 307 (2007) 2094 – 2105
+
+Suppose B has a truth assignment such that each clause in C contains a true literal and a false literal. Then, since no variable in B′ − B appears in a clause in C′, assigning each variable in B′ − B the value FALSE extends this truth assignment to one for B′ with the property that each clause in C′ contains a true literal and a false literal.
+
+Conversely, suppose there is a truth assignment for B′ such that each clause in C′ contains a true literal and a false literal. Then, since B ⊆ B′ and C ⊆ C′, the restriction of this truth assignment to B has the property that each clause in C contains a true literal and a false literal.
 
 -----
  
