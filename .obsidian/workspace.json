@@ -4,35 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "0e2de87ce9164309",
+        "id": "02c730595841a946",
         "type": "tabs",
         "children": [
           {
-            "id": "d3df32e1b029d7e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2022/05/202205131208 Cut-vertex closures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a832f249d4c3dbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2022/06/202207010853 Thesis Statement Final.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "211c001b153da1a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023/202306211211 WDF Restrictions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d9f3ccaf4eb87745",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50f15c4c01ed8465",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +37,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,16 +142,17 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "211c001b153da1a1",
+  "active": "df8921216f5e1b34",
   "lastOpenFiles": [
     "2023/202306211211 WDF Restrictions.md",
     "2023/202306211411 Claim about WDF Hardness.md",
+    "2022/05/202205131208 Cut-vertex closures.md",
+    "2022/06/202207010853 Thesis Statement Final.md",
     "2023",
     "2022/06/202206281827 Master Equation.md",
     "2022/06/202206281759 Num Subpaths Result.md",
     "2022/06/202206281754 Num Eqns SIR on Path.md",
     "2022/06/202206281607 Short biography.md",
-    "2022/06/202207010853 Thesis Statement Final.md",
     "2022/06/202206131024 Thesis Statement Drafting 2.md",
     "2022/06/202206091637 Thesis Statement Drafting.md",
     "2022/06/202206081650 Thesis Statement Rewriting.md",
