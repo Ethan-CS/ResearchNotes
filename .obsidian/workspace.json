@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md",
+                "file": "2023/202306211446 Satisfiability.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md",
+                "file": "2023/202306211446 Satisfiability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md"
+                "file": "2023/202306211446 Satisfiability.md"
               }
             }
           }
@@ -142,10 +142,12 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "df8921216f5e1b34",
+  "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
-    "2023/202306211211 WDF Restrictions.md",
     "2023/202306211411 Claim about WDF Hardness.md",
+    "2023/202306211446 Satisfiability.md",
+    "2023/Untitled.md",
+    "2023/202306211211 WDF Restrictions.md",
     "2022/05/202205131208 Cut-vertex closures.md",
     "2022/06/202207010853 Thesis Statement Final.md",
     "2023",
