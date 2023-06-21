@@ -22,9 +22,6 @@ Beginning at bottom, with nothing else specified about the instance, consider wh
 -----
  
 **Consider:**
-
-
-**Source:** 
-
-
-**Reference:** 
+ - Are all these conditions correct for poly time solveable?
+ - Change the problem definition in APR and paper to not hardcode peril function to satisfy these conditions - this is part of the _restriction_ not the instance.
+ - Look at MIT Lectures from Eric Demaines on hardness/parameterised complexity/etc.
