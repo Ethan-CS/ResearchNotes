@@ -16,7 +16,8 @@ Under which conditions can we claim WDF is poly time solvable? Seems we need, fo
  - Uniform cost to defend beside fire? I.e. one vertex with burning neighbour no cheaper/more expensive than another?
  - Budget and cost to defend beside fire such that at least $\Delta-2$ can be defended each time-step
 
-Beginning at bottom, consider which can be removed and problem is NP-Hard (take an instance of e.g. Firefighter-Tree and reduce to instance of WDF where each (set of) condition(s) are removed). Do we end up with a _dichotomy result_
+Beginning at bottom, with nothing else specified about the instance, consider which can be removed and problem is NP-Hard (take an instance of e.g. Firefighter-Tree and reduce to instance of WDF where each (set of) condition(s) are removed). Do we end up with a _dichotomy result?_ This is somewhere where if true then hard, if false then easy.
+
 
 -----
  
