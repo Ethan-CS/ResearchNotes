@@ -8,6 +8,8 @@ Status : #triage
 
 **Previous note:** [202306221137 Erik Demaine Complexity Lecture](202306221137%20Erik%20Demaine%20Complexity%20Lecture.md)
 
+**See list of conditions:** [202306211211 WDF Restrictions](202306211211%20WDF%20Restrictions.md), [202306211411 Claim about WDF Hardness](202306211411%20Claim%20about%20WDF%20Hardness.md)
+
 -----
 
 ### Questions & thoughts:
