@@ -32,18 +32,24 @@ Another definition of NP: decision problems with poly size certificates and poly
 
  - $X$ is **NP-Complete** if $X$ is in NP and $X$ is *NP-Hard*.
  - $X$ is **NP-Hard** if every problem $Y\in$ NP *reduces* to $X$.
- - **Reduction** for a problem $A$ to a problem $B$ is a poly time algorithm converting $A$ inputs into equivalent $B$ inputs.
+ - **Reduction** for a problem $A$ to a problem $B$ is a poly time algorithm converting $A$ inputs into equivalent $B$ inputs (same YES/NO answer). If B is in P then A is in P and similarly for NP. $B$ is at least as hard as $A$.
  - X is not in P unless P=NP.
 
 NP-Complete - you're _exactly_ as hard as everything in NP, no easier no harder.
 
 ```
-----------> difficulty
-P
-|----|---|
-NP   | NP-Hard
+------------> difficulty
+|-|----|---|
+ P  NP | NP-Hard
      NP-Complete
 ```
+
+Reduction: if we believe there is some problem in NP\P called $X$, we reduce this to $Y$ to show $Y$ is at least as hard as $B$.
+
+#### Proving $X$ is NP-Complete
+
+1. $X\in$NP
+2. Reduce from known NP-Complete problem to $X$
 
 
 -----
