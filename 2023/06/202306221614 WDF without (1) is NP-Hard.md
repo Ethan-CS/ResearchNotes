@@ -18,9 +18,9 @@ Either a **Claim** or a **corollary** of the above result: Firefighter is NP-Com
 
 Call the above restriction of Firefighter FF'. Define a new problem WDF' that is WDF on the same restricted class of graph.
 
-**Result:** FF' $\leq_\textrm{P}$ WDF', i.e. WDF' is NP-Hard.
+**Theorem:** FF' $\leq_\textrm{P}$ WDF', i.e. WDF' is NP-Hard.
 
-Proof. Consider any instance of FF' on a rooted graph $(G, r)$ and a budget $b\in\mathbb{Z_{>0}}$ such that $\Delta(G)=b+2$ and $\textrm{deg}(r)=b+2$. Consider an instance of WDF' on a rooted graph $(G, r)$ such that $\Delta(G)=bd+2$, where $d$ is the number of vertices that can be defended adjac with vertex set $V$, budget $b\in\mathbb{Z_{>0}}$, set of time-steps $T$  and cost function $\forall v\in V, \forall t \in T, c(v, t)=1$ i.e., precisely $b$ vertices can be defended at each time-step 
+Proof. Consider any instance of FF' on a rooted graph $(G, r)$ and a budget $b\in\mathbb{Z_{>0}}$ such that $\Delta(G)=b+2$ and $\textrm{deg}(r)=b+2$. Consider an instance of WDF' on a rooted graph $(G, r)$, cost function $c$ and budget $b\in\mathbb{Z_{>0}}$. Let $G$ be such that $\Delta(G)=\textrm{deg}(r)=bd+2$, where $d$ is the number of vertices that can be defended adjacent to burning vertices at each timestep. Let $V$ be the vertex set of $G$ and let $T\subset\mathbb{Z}$ be a set of time-steps and define the cost function as $\forall v\in V, \forall t \in T, c(v, t)=1$ i.e., precisely $b$ vertices can be defended at each time-step. Then, clearly we have encoded FF' as an instance of WDF'. FF' is NP-Complete, hence WDF' is also NP-Complete.
 
 -----
  
