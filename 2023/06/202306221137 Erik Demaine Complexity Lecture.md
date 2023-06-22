@@ -51,6 +51,28 @@ Reduction: if we believe there is some problem in NP\P called $X$, we reduce thi
 1. $X\in$NP
 2. Reduce from known NP-Complete problem to $X$
 
+Example: reducing 3SAT to Super Mario Bros to show that SMB is NP-Complete.
+
+SMB:
+ - Generalise to arbitrary screen size (otherwise we could dynamic program in poly time to an optimal solution) - entire game happens on one $n\times n$ screen.
+ - Given a 3SAT formula, need to implement an SMB level that implements that formula.
+
+Mario enters gadgets representing variable, with two outputs T and F. This represents a *gadget* and looks as follows:
+```
+----------------
+M
+---          ---
+|              |
+|              |
+|              |
+|              |
+|  ----------  |
+|  |        |  |
+  T           F
+```
+Three of these gadgets represent a clause when connected as follows: all clauses with $x_1$ T connected with a wire, then same for $\neg x_1$ as F choice. If M chooses $x_1$ true, he visits all unnegated $x_1$ instances, otherwise all $\neg x_1$ instances. Rinse and repeat for $x_i$ up to $n$. Once we have traversed all clauses, we reach the flag at the end of the level.
+
+
 
 -----
  
