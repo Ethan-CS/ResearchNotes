@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md",
+                "file": "2023/202306211211 WDF Restrictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md",
+                "file": "2023/202306211211 WDF Restrictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/202306211411 Claim about WDF Hardness.md"
+                "file": "2023/202306211211 WDF Restrictions.md"
               }
             }
           }
@@ -138,8 +138,8 @@
   },
   "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
-    "2023/202306211211 WDF Restrictions.md",
     "2023/202306211411 Claim about WDF Hardness.md",
+    "2023/202306211211 WDF Restrictions.md",
     "2023/202306211446 Satisfiability.md",
     "2023/Untitled.md",
     "2022/05/202205131208 Cut-vertex closures.md",
