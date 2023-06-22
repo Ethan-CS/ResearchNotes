@@ -70,8 +70,14 @@ M
 |  |        |  |
   T           F
 ```
-Three of these gadgets represent a clause when connected as follows: all clauses with $x_1$ T connected with a wire, then same for $\neg x_1$ as F choice. If M chooses $x_1$ true, he visits all unnegated $x_1$ instances, otherwise all $\neg x_1$ instances. Rinse and repeat for $x_i$ up to $n$. Once we have traversed all clauses, we reach the flag at the end of the level.
+Three of these gadgets represent a clause when connected as follows: all clauses with $x_1$ T connected with a wire, then same for $\neg x_1$ as F choice. If M chooses $x_1$ true, he visits all unnegated $x_1$ instances, otherwise all $\neg x_1$ instances. Rinse and repeat for $x_i$ up to $n$. Once we have traversed all clauses, we reach the flag at the end of the level. We cannot traverse a false clause. 
 
+#### 3-Dimensional Matching (3DM)
+
+ - 2D Matching is in P, but 3DM is NP-Complete.
+
+Problem:
+Given disjoint sets $X, Y, Z$ each of size $n$,  given triples $T\subseteq X\times Y\times Z$, is there a subset $S\subseteq T$ such that every element in $X\cup Y\cup Z$ is in exactly one triple $s\in\mathcal{S}$?
 
 
 -----
