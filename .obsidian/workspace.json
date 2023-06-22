@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202306221614 WDF without 1 is NP-Hard.md",
+                "file": "202306221614 WDF without (1) is NP-Hard.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202306221614 WDF without 1 is NP-Hard.md",
+                "file": "202306221614 WDF without (1) is NP-Hard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202306221614 WDF without 1 is NP-Hard.md"
+                "file": "202306221614 WDF without (1) is NP-Hard.md"
               }
             }
           }
@@ -127,7 +127,7 @@
   "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
     "2023/06/202306221137 Erik Demaine Complexity Lecture.md",
-    "202306221614 WDF without 1 is NP-Hard.md",
+    "202306221614 WDF without (1) is NP-Hard.md",
     "2023/06/202306211211 WDF Restrictions.md",
     "2023/06",
     "2023/06/202306211446 Satisfiability.md",

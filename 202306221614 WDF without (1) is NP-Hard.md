@@ -4,7 +4,7 @@ Status : #triage
 
 -----
 
-# WDF without 1. is NP-Hard
+# WDF without (1) is NP-Hard
 
 **Previous note:** [[]]
 
