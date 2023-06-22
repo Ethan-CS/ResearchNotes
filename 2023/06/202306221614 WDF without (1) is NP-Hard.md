@@ -20,7 +20,7 @@ Call the above restriction of Firefighter FF'. Define a new problem WDF' that is
 
 **Result:** FF' $\leq_\textrm{P}$ WDF', i.e. WDF' is NP-Hard.
 
-Proof. Consider an instance of FF', a rooted graph $(G, r)$ and a budget $b\in\mathbb{Z}$ such that 
+Proof. Consider any instance of FF' on a rooted graph $(G, r)$ and a budget $b\in\mathbb{Z_{>0}}$ such that $\Delta(G)=b+2$ and $\textrm{deg}(r)=b+2$. Consider an instance of WDF' on a rooted graph $(G, r)$ such that $\Delta(G)=bd+2$, where $d$ is the number of vertices that can be defended adjac with vertex set $V$, budget $b\in\mathbb{Z_{>0}}$, set of time-steps $T$  and cost function $\forall v\in V, \forall t \in T, c(v, t)=1$ i.e., precisely $b$ vertices can be defended at each time-step 
 
 -----
  
