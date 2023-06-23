@@ -31,18 +31,6 @@ and a budget $b=1$.
 We have clearly encoded WFIRE as an instance of WDF. Since WFIRE is NP-Hard even when restricted to trees of max degree 3 when the fire starts at a vertex of degree 2, WDF is also NP-Hard even under the same restriction.
 **End of proof.**
 
-
-
-
-
-
 -----
  
-**Consider:**
-
-
-**Source:** 
-
-
-**Reference:** 
-
+**Consider:** Think more about this - have I proved what I think I have, and what I set out to prove? I'm a bit confused about reductions under restrictions. Move on when satisfied to 4th condition.
