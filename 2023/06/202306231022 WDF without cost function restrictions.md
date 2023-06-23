@@ -24,8 +24,13 @@ We prove that WDF without cost function restrictions (2 and 3) is NP-Complete ev
  - Instance: rooted graph $(G, r)$, integer $k$, weight function $w:V(G)\rightarrow\mathbb{Z}$.
  - Question: is $MVS_w(G, r)\geq k$?
 
-Instance of WDF: rooted graph $(G, r)$ such that $\Delta(G)=3$ and $\textrm{deg}(r)=2$, an integer $k\geq1$, a weight function $c:V(G)\times \{1, 2, \dots, |V(G)|\}\rightarrow\mathbb{Z}\subset\mathbb{R}$ that is uniformly integer valued  across  all vertices, i.e. 
-$$\forall i,j\in \{1,\,2, \dots, |V(G)|\}, \forall v\in V(G), c(v, i)=c(v, j).$$
+**Proof.** Instance of WDF: rooted graph $(G, r)$ such that $\Delta(G)=3$ and $\textrm{deg}(r)=2$, an integer $k\geq1$, a weight function $c:V(G)\times \{1, 2, \dots, |V(G)|\}\rightarrow\mathbb{Z}\subset\mathbb{R}$ that is uniformly integer valued  across  all vertices, i.e. 
+$$\forall i,j\in \{1, 2, \dots, |V(G)|\},\,\forall v\in V(G),\,c(v, i)=c(v, j)$$
+and a budget $b=1$.
+
+We have clearly encoded WFIRE as an instance of WDF. Since WFIRE is NP-Hard even when restricted to trees of max degree 3 when the fire starts at a vertex of degree 2, WDF is also NP-Hard even under the same restriction.
+**End of proof.**
+
 
 
 
