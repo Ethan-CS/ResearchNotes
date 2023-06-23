@@ -24,9 +24,9 @@ We prove that WDF without cost function restrictions (2 and 3) is NP-Complete ev
  - Instance: rooted graph $(G, r)$, integer $k$, weight function $w:V(G)\rightarrow\mathbb{Z}$.
  - Question: is $MVS_w(G, r)\geq k$?
 
-Instance of WDF: rooted graph $(G, r)$ such that $\Delta(G)=3$ and $\textrm{deg}(r)=2$, an integer $k\geq1$, a weight function $c:V(G)\times \{1, 2, \dots, |V(G)|\}\rightarrow\mathbb{R}$ mapping each vertex at each timestep to a cost to defend and a real-valued budget $b>0$.
+Instance of WDF: rooted graph $(G, r)$ such that $\Delta(G)=3$ and $\textrm{deg}(r)=2$, an integer $k\geq1$, a weight function $c:V(G)\times \{1, 2, \dots, |V(G)|\}\rightarrow\mathbb{Z}\subset\mathbb{R}$ that is uniformly integer valued  across  all vertices, i.e. 
+$$\forall i,j\in \{1,\,2, \dots, |V(G)|\}, \forall v\in V(G), c(v, i)=c(v, j).$$
 
-In particular, let the function $c$ be such that times are ignored, i.e. $\forall i, j\in \{1, 2, \dots, |V(G)|\}, \forall v\in V(G), c(v, i)=c(v, j)$.
 
 
 
