@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/06/202306211211 WDF Restrictions.md",
+                "file": "2023/06/202306231022 WDF without cost function restrictions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/06/202306211211 WDF Restrictions.md",
+                "file": "2023/06/202306231022 WDF without cost function restrictions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/06/202306211211 WDF Restrictions.md"
+                "file": "2023/06/202306231022 WDF without cost function restrictions.md"
               }
             }
           }
@@ -126,10 +126,11 @@
   },
   "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
-    "2023/06/202306211411 Claim about WDF Hardness.md",
     "2023/06/202306221614 WDF without (1) is NP-Hard.md",
-    "2023/06/202306211446 Satisfiability.md",
+    "2023/06/202306231022 WDF without cost function restrictions.md",
     "2023/06/202306211211 WDF Restrictions.md",
+    "2023/06/202306211411 Claim about WDF Hardness.md",
+    "2023/06/202306211446 Satisfiability.md",
     "2023/06/202306221137 Erik Demaine Complexity Lecture.md",
     "2023/06",
     "2023/Untitled.md",
@@ -145,7 +146,7 @@
     "2022/06/202206081650 Thesis Statement Rewriting.md",
     "2022/06/202206281830 Num Eqns SIR Cycle.md",
     "2022/07/202207041349 UB Num of equations.md",
-    "RSE Project/202207161515 Initial Planning.md",
+    "2022/RSE Project/202207161515 Initial Planning.md",
     "202207010853.md"
   ]
 }
