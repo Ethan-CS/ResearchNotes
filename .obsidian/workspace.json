@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/07/202307261253 Firefighter Motivation.md",
+                "file": "202307261918.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/07/202307261253 Firefighter Motivation.md",
+                "file": "202307261918.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/07/202307261253 Firefighter Motivation.md"
+                "file": "202307261918.md"
               }
             }
           }
@@ -126,8 +126,10 @@
   },
   "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
-    "2023/06/202306221614 WDF without (1) is NP-Hard.md",
+    "2023/07/Untitled.md",
+    "202307261918.md",
     "2023/07/202307261253 Firefighter Motivation.md",
+    "2023/06/202306221614 WDF without (1) is NP-Hard.md",
     "2023/07",
     "2023/06/202306231022 WDF without cost function restrictions.md",
     "2023/06/202306231653 Summary of results so far.md",
