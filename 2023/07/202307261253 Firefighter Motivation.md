@@ -22,7 +22,7 @@ To start thinking about improving my sense of narrative and motivation, I will u
 
 (Scenario: forest fire, fire in oil terminal[^2] or fire in high-rise[^3]).
 
-Hundreds of feet above the forest. In a spotter plane, coordinating five planes in their deployment of around 1,000 gallons of fire retardant each. Can you contain the fire with these resources, if so what is your strategy? If not, how many refills will be needed and when should they be carried out? Can the fire be contained without the forest being entirely burned?
+Hundreds of feet above a forest. Smoke rising above the trees, fire becoming visible as it begins to spread. In a spotter plane, coordinating five planes in their deployment of around 1,000 gallons of fire retardant each. Can you contain the fire with these resources, if so what is your strategy? If not, how many refills will be needed and when should they be carried out? Can the fire be contained without the forest being entirely burned?
 
 (Scenario: virus spreading across population[^1]).
 
