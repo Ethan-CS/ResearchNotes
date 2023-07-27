@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "202307261918.md",
+                "file": "2023/07/202307261918 Proof WFire is NP-Complete.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202307261918.md",
+                "file": "2023/07/202307261918 Proof WFire is NP-Complete.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202307261918.md"
+                "file": "2023/07/202307261918 Proof WFire is NP-Complete.md"
               }
             }
           }
@@ -124,10 +124,10 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "50f15c4c01ed8465",
+  "active": "df8921216f5e1b34",
   "lastOpenFiles": [
     "2023/07/Untitled.md",
-    "202307261918.md",
+    "2023/07/202307261918 Proof WFire is NP-Complete.md",
     "2023/07/202307261253 Firefighter Motivation.md",
     "2023/06/202306221614 WDF without (1) is NP-Hard.md",
     "2023/07",
