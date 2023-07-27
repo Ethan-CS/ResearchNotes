@@ -12,6 +12,8 @@ Status : #triage
 
 ### Questions & thoughts:
 
+Below has been moved from Overleaf doc to here as proof is more for my own practice than anything anyone would be interested in reading.
+
 We show that **WFire** is NP-complete by first proving the following by reduction from **Firefighter**:
 
 *Lemma:* ***WFire** is NP-Hard.*
