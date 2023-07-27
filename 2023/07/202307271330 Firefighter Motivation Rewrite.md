@@ -12,9 +12,11 @@ Status : #triage
 
 ### Questions & thoughts:
 
- Due to climate change and land use alteration, wildfires are surging globally. Recent UN models predict continual rises in the frequency and intensity of wildfires as we struggle for survival through the 21st century: an increase of up to 14 per cent by 2030, 30 per cent by the end of 2050 and 50 per cent by 2100. In the face of such escalating hazards, our work joins this vital endeavour, where rigorous analysis and actionable insights can make all the difference in preserving our planet's irreplaceable natural landscapes.
+ Due to climate change and land use alteration, wildfires are surging globally. Recent UN models predict continual rises in the frequency and intensity of wildfires as we struggle for survival through the 21st century: an increase of up to 14 per cent by 2030, 30 per cent by the end of 2050 and 50 per cent by 2100. Our work models the deployment of firefighting resources, where rigorous analysis and actionable insights can make all the difference in preserving our planet's irreplaceable natural landscapes and protecting animal and human life.
 
-Our research delves into the heart of the Firefighter problem and variants designed to model this and other scenarios, exploring strategies that optimise resources and safeguard wildlife and human habitats in forest fires, animal and human lives in epidemics. As we engage with these problems, envision a world where forests endure, already inevitable damage to natural habitats is minimised and wildlife begins to recover.
+Our modern world and recent history present immediate threats not only to the planet's natural resources but to the lives that created such conditions. The modern interconnected and urbanised world has  potential for diseases to spread is increasing and the risk of outbreaks escalating into epidemics or pandemics
+
+Our research delves into the heart of the Firefighter problem and variants designed to model this and other scenarios, exploring strategies that help optimise resources to safeguard wildlife and human habitats in forest fires. As we engage with these problems, envision a world where forests endure, already inevitable damage to natural habitats is minimised and wildlife begins to recover.
 
 
 
