@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/07/202307271330 Firefighter Motivation Rewrite.md",
+                "file": "2023/07/202307261253 Firefighter Motivation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/07/202307271330 Firefighter Motivation Rewrite.md",
+                "file": "2023/07/202307261253 Firefighter Motivation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/07/202307271330 Firefighter Motivation Rewrite.md"
+                "file": "2023/07/202307261253 Firefighter Motivation.md"
               }
             }
           }
@@ -126,10 +126,10 @@
   },
   "active": "50f15c4c01ed8465",
   "lastOpenFiles": [
-    "2023/07/202307271253 Good Behaviour Firefighting.md",
-    "2023/07/202307271330 Firefighter Motivation Rewrite.md",
-    "2023/07/202307261253 Firefighter Motivation.md",
     "2023/07/202307261918 Proof WFire is NP-Complete.md",
+    "2023/07/202307271330 Firefighter Motivation Rewrite.md",
+    "2023/07/202307271253 Good Behaviour Firefighting.md",
+    "2023/07/202307261253 Firefighter Motivation.md",
     "2023/07/Untitled.md",
     "2023/06/202306221614 WDF without (1) is NP-Hard.md",
     "2023/07",
