@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "01e0c26924b3362b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -124,7 +135,7 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "50f15c4c01ed8465",
+  "active": "01e0c26924b3362b",
   "lastOpenFiles": [
     "2023/07/202307261918 Proof WFire is NP-Complete.md",
     "2023/07/202307271330 Firefighter Motivation Rewrite.md",
