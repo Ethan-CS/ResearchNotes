@@ -23,9 +23,11 @@
             "id": "01e0c26924b3362b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.3.7"
+                "file": "2023/08/202308111407.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/07/202307261253 Firefighter Motivation.md",
+                "file": "2023/08/202308111407.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/07/202307261253 Firefighter Motivation.md"
+                "file": "2023/08/202308111407.md"
               }
             }
           }
@@ -135,8 +137,10 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "01e0c26924b3362b",
+  "active": "df8921216f5e1b34",
   "lastOpenFiles": [
+    "2023/08/202308111407.md",
+    "2023/08",
     "2023/07/202307261918 Proof WFire is NP-Complete.md",
     "2023/07/202307271330 Firefighter Motivation Rewrite.md",
     "2023/07/202307271253 Good Behaviour Firefighting.md",
@@ -164,7 +168,6 @@
     "2022/06/202206081650 Thesis Statement Rewriting.md",
     "2022/06/202206281830 Num Eqns SIR Cycle.md",
     "2022/07/202207041349 UB Num of equations.md",
-    "2022/RSE Project/202207161515 Initial Planning.md",
-    "202207010853.md"
+    "2022/RSE Project/202207161515 Initial Planning.md"
   ]
 }
