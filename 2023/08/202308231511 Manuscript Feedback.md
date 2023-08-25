@@ -63,14 +63,16 @@ The authors complement existing theoretical work which showed the possibility of
 Comments/suggestions/questions:  
   
 1. The authors must make it clear that these systems are only exact on either tree networks with no loops or on graphs with loops if the closures leave the loops intact. This needs to become obvious early on. 
-True for closured systems. Need to address this.
+Is this true? When presented in Kiss paper (2017) there is no such restriction on graphs. Look into this...
   
 2. Pages two and three are very dry with literally endless definitions of well-known concepts. Can these be presented differently, maybe in a table or something? It just makes the paper very difficult to read with no linking text or motivation between the 11 definitions.  
 Not sure definitions are 'literally endless' but agree there is little motivation - look into ways to represent/condense lots of definitions - perhaps not all essential?
   
 3. I think some of the original papers say that the system needs to start in a pure state for the closures to make sense. Pure means that the system is one of its m^n configurations with probability one at time t=0. So, to me proposition 3.1 is not surprising.  
+Not sure I understand this.
   
-4. More importantly to my knowledge and memory, when one writes down equations, generate them, the nodes in the cut set when a closure is needed will never need to be in any other state than the S state. This is the beauty of the procedure, that these nodes are never needed to be in I or R states when a triple or bigger structure needs to be closed. If one wants to write down the full system with all possible configurations then yes, nodes in the cut set can be in S and I or R or some other state depending on the dynamics. However, in a bottom-up approach, writing equations for singles will involve pairs and pairs will involve triples but it turns out that cut vertices in triples or bigger structures will always be in the S state. One should say that for writing down equations a bottom-up approach is used as the top-down is too complex due to the high number of equations. Oh I see, this is said in Observation 3.7.  
+4. More importantly to my knowledge and memory, when one writes down equations, generate them, the nodes in the cut set when a closure is needed will never need to be in any other state than the S state. This is the beauty of the procedure, that these nodes are never needed to be in I or R states when a triple or bigger structure needs to be closed. If one wants to write down the full system with all possible configurations then yes, nodes in the cut set can be in S and I or R or some other state depending on the dynamics. However, in a bottom-up approach, writing equations for singles will involve pairs and pairs will involve triples but it turns out that cut vertices in triples or bigger structures will always be in the S state. One should say that for writing down equations a bottom-up approach is used as the top-down is too complex due to the high number of equations. Oh I see, this is said in Observation 3.7. 
+They changed their mind by the last sentence, I had addressed this in an observation?
   
 5. Is ER a good network to test this approach on? ER will have loops and the exact equations will not be exact, or are the cut-sets identified and the closures are done around them?  
   
@@ -91,23 +93,6 @@ I have some comments that may be of use to the authors before submitting the rev
 4. The notation in Propositions 3.1 and Theorem 3.5 should be better explained. Right now, one needs to go through notation 2.1 and definition 2.14. I suggest giving na exemple after definition 2.14 just as there is an example after notation 2.1.  
 5. In section 4 the authors consider random graphs. For certain simple models of disease propagation on some of these there are some extra conserved quantities which may be used to further reduce the system of equations. See Mark Newmann's book "Networks: An Introduction" from Oxford University Press, 2018.  
 There is also a more recent version of these conserved quantities developed to some more refined models in the article "New approaches to epidemic modelling on networks." Published in Scientific Reports earlier this year 2023.  
-  
-  
-*****  
-***********************************************************  
-For further assistance, please visit our customer support site at [http://help.elsevier.com/app/answers/list/p/7923](http://help.elsevier.com/app/answers/list/p/7923). Here you can search for solutions on a range of topics, find answers to frequently asked questions and learn more about EM via interactive tutorials. You will also find our 24/7 support contact details should you need any further assistance from one of our customer support representatives.  
-  
-This journal uses the Elsevier Article Transfer Service. This means that if an editor feels your manuscript is more suitable for an alternative journal, then you might be asked to consider transferring the manuscript to such a journal. The recommendation might be provided by a Journal Editor, a dedicated Scientific Managing Editor, a tool assisted recommendation, or a combination. For more details see the journal guide for authors.  
-#AU_TCS#  
-  
-To ensure this email reaches the intended recipient, please do not delete the above code
-
-  
-  
-
----
-
-In compliance with data protection regulations, you may request that we remove your personal registration details at any time. [(Remove my information/details)](https://www.editorialmanager.com/tcs/login.asp?a=r). Please contact the publication office if you have any questions.
 
 -----
  
