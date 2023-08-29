@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023/08/202308231511 Manuscript Feedback.md",
+                "file": "2023/08/202308291341 Addressing Manuscript Reviews.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023/08/202308231511 Manuscript Feedback.md",
+                "file": "2023/08/202308291341 Addressing Manuscript Reviews.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023/08/202308231511 Manuscript Feedback.md"
+                "file": "2023/08/202308291341 Addressing Manuscript Reviews.md"
               }
             }
           }
@@ -137,9 +137,10 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "01e0c26924b3362b",
+  "active": "df8921216f5e1b34",
   "lastOpenFiles": [
     "2023/08/202308231511 Manuscript Feedback.md",
+    "2023/08/202308291341 Addressing Manuscript Reviews.md",
     "2023/08/202308111407.md",
     "2023/08",
     "2023/07/202307261918 Proof WFire is NP-Complete.md",
@@ -167,7 +168,6 @@
     "2022/06/202206131024 Thesis Statement Drafting 2.md",
     "2022/06/202206091637 Thesis Statement Drafting.md",
     "2022/06/202206081650 Thesis Statement Rewriting.md",
-    "2022/06/202206281830 Num Eqns SIR Cycle.md",
-    "2022/07/202207041349 UB Num of equations.md"
+    "2022/06/202206281830 Num Eqns SIR Cycle.md"
   ]
 }
