@@ -63,7 +63,7 @@ The authors complement existing theoretical work which showed the possibility of
 Comments/suggestions/questions:  
   
 1. The authors must make it clear that these systems are only exact on either tree networks with no loops or on graphs with loops if the closures leave the loops intact. This needs to become obvious early on. 
-Relates to (5), loops are intact as cut-vertices 
+Relates to (5), loops are intact as cut-vertices are identified at start of procedure and then replaced as terms would be added referencing cut-vertices.
   
 2. Pages two and three are very dry with literally endless definitions of well-known concepts. Can these be presented differently, maybe in a table or something? It just makes the paper very difficult to read with no linking text or motivation between the 11 definitions.  
 Not sure definitions are 'literally endless' but agree there is little motivation - look into ways to represent/condense lots of definitions - perhaps not all essential?
