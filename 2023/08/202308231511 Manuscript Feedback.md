@@ -79,7 +79,8 @@ They changed their mind by the last sentence, I had addressed this in an observa
 6. In figure 11, I would lot the y=x diagonal to show that in most cases the points lie below it.  
   
 7. I was surprised to see no pseudocode or code to explain how the authors come up with the computational method/framework. I would add a whole section explaining this, what language and how the code works in general terms. At the end this is the main contribution of the paper.  
-  
+
+Our implementation first identifies the cut vertices in the graph using a depth-first search. We first obtain equations for single vertices
   
   
 Reviewer #2: Review of "Feasibility Assessments of a Dynamical Approach to Compartmental Modelling on Graphs: Scaling Limits and Performance Analysis" submitted to Theoretical Computer Science  
