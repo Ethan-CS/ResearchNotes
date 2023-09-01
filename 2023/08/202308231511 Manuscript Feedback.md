@@ -80,7 +80,7 @@ They changed their mind by the last sentence, I had addressed this in an observa
   
 7. I was surprised to see no pseudocode or code to explain how the authors come up with the computational method/framework. I would add a whole section explaining this, what language and how the code works in general terms. At the end this is the main contribution of the paper.  
 
-Our implementation first identifies the cut vertices in the graph using a depth-first search. We first obtain equations for single vertices
+Our implementation first identifies the cut vertices in the graph using a depth-first search. We first obtain equations for each graph vertices in each non-terminal state of the model (using the master equation (ref)) 
   
   
 Reviewer #2: Review of "Feasibility Assessments of a Dynamical Approach to Compartmental Modelling on Graphs: Scaling Limits and Performance Analysis" submitted to Theoretical Computer Science  
