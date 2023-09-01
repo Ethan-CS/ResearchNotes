@@ -63,12 +63,10 @@ The authors complement existing theoretical work which showed the possibility of
 Comments/suggestions/questions:  
   
 1. The authors must make it clear that these systems are only exact on either tree networks with no loops or on graphs with loops if the closures leave the loops intact. This needs to become obvious early on. 
-Is this true? When presented in Kiss paper (2017) there is no such restriction on graphs. Look into this...
+Relates to (5), loops are intact as cut-vertices 
   
 2. Pages two and three are very dry with literally endless definitions of well-known concepts. Can these be presented differently, maybe in a table or something? It just makes the paper very difficult to read with no linking text or motivation between the 11 definitions.  
 Not sure definitions are 'literally endless' but agree there is little motivation - look into ways to represent/condense lots of definitions - perhaps not all essential?
-
-__
   
 3. I think some of the original papers say that the system needs to start in a pure state for the closures to make sense. Pure means that the system is one of its m^n configurations with probability one at time t=0. So, to me proposition 3.1 is not surprising.  
 Not sure I understand this.
