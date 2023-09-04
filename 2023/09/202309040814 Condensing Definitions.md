@@ -14,15 +14,10 @@ Status : #triage
 
 We note some standard graph theory definitions, which are used throughout.
 
-First, a *digraph* (or *directed graph*) $G=(V,E)$ is a pair composed of a finite set $V$ called the {\it vertices} and an irreflexive binary relation on $V$ called an {\it adjacency relation,} represented as a set $E$ of ordered pairs of vertices $\{(v_i, v_j)~|~v_i, v_j \in V\} \subseteq V\times V$ called the {\it edges.}
+First, a *digraph* (or *directed graph*) $G=(V,E)$ is a pair composed of a finite set $V$ called the *vertices* and an irreflexive binary relation on $V$ called an *adjacency relation* represented as a set $E$ of ordered pairs of vertices $\{(v_i, v_j)~|~v_i, v_j \in V\} \subseteq V\times V$ called the *edges*. An *undirected graph* $G=(V,E)$ is a similar pair in which the adjacency relation is symmetric i.e., $E=E^{-1}.$ Unless otherwise stated, in this paper we use undirected graphs and refer to them simply as "graphs." While we define the following standard notions on graphs, we could analogously define them on digraphs.
 
-An undirected graph $G=(V,E)$ is a pair as in Definition \ref{def:digraph} in which the adjacency relation is symmetric i.e., $E=E^{-1}.$
-
-Unless otherwise stated, in this paper we use undirected graphs and refer to them simply as "graphs." While we define the following standard notions on graphs, we could analogously define them on digraphs.
-
-A weighted graph $(G, w)$ is pair composed of a graph $G=(V, E)$ and a weight function $w:E\rightarrow\mathbb{R}$, where $w(e)$ refers to the {\it weight} of $e\in E.$
-
-Let $G=(V, E)$ be a graph. A subgraph $H=(V_H, E_H)$, denoted $H\subseteq G$, is a graph on a vertex-set $V_H\subseteq V$ and edge-set $E_H=\{\{v_i, v_j\}~|~v_i, v_j\in V_H\}\subseteq E.$
+A *weighted graph* $(G, w)$ is pair composed of a graph $G=(V, E)$ and a weight function $w:E\rightarrow\mathbb{R}$, where $w(e)$ refers to the *weight* of $e\in E.$
+For a graph $G=(V, E),$ a subgraph $H=(V_H, E_H)$, denoted $H\subseteq G$, is a graph on a vertex-set $V_H\subseteq V$ and edge-set $E_H=\{\{v_i, v_j\}~|~v_i, v_j\in V_H\}\subseteq E.$
 
 Let $G=(V, E)$ be a graph. An induced subgraph $H\subseteq G$ is a graph on a vertex-set $V_H\subseteq V$ and an edge-set consisting of all edges $\{v_i, v_j\} \in E$ for $v_i, v_j\in V_H$. The subgraph of $G$ induced by $H$ is denoted $G[H].$
 
