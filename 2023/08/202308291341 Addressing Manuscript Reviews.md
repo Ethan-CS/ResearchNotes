@@ -31,9 +31,11 @@ Reviewer 2
 
 1. Strictly speaking, equation (5) only gives na upper bound on the number of equations and an extra argumente is needed in order to explain that the exponential upper bound is achieved by a specific configuration. Otherwise, it is misleading to state in the Introduction "such systems scale exponentially" and it would be better to write "such systems scale at most exponentially".
 2. In the remaining part of the Introduction it would be good to further emphasize that the results of 3.2 and 3.3 assume specific forms of the graphs fow which moment closure conditions hold and that such whether proven in the reference [2].  
-3. There is something confusing in definition 2.5 as both H and G[H] are used to denote the subgraph.  
-4. The notation in Propositions 3.1 and Theorem 3.5 should be better explained. Right now, one needs to go through notation 2.1 and definition 2.14. I suggest giving na exemple after definition 2.14 just as there is an example after notation 2.1.  
-5. In section 4 the authors consider random graphs. For certain simple models of disease propagation on some of these there are some extra conserved quantities which may be used to further reduce the system of equations. See Mark Newmann's book "Networks: An Introduction" from Oxford University Press, 2018.  There is also a more recent version of these conserved quantities developed to some more refined models in the article "New approaches to epidemic modelling on networks." Published in Scientific Reports earlier this year 2023.  
+(In signposting for this section, make even more clear that these results only apply on these restricted classes of graphs and only because these allow us to exploit closures effectively)
+1. There is something confusing in definition 2.5 as both H and G[H] are used to denote the subgraph.  
+2. The notation in Propositions 3.1 and Theorem 3.5 should be better explained. Right now, one needs to go through notation 2.1 and definition 2.14. I suggest giving na exemple after definition 2.14 just as there is an example after notation 2.1.  
+3. In section 4 the authors consider random graphs. For certain simple models of disease propagation on some of these there are some extra conserved quantities which may be used to further reduce the system of equations. See Mark Newmann's book "Networks: An Introduction" from Oxford University Press, 2018.  There is also a more recent version of these conserved quantities developed to some more refined models in the article "New approaches to epidemic modelling on networks." Published in Scientific Reports earlier this year 2023.  
+(add into discussion, unless there's something really obvious that we should add in and we need to ask for more time from editor.)
   
 
 -----
