@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5b1adb9055d396ae",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -137,7 +147,7 @@
       "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "01e0c26924b3362b",
+  "active": "5b1adb9055d396ae",
   "lastOpenFiles": [
     "2023/08/202308291341 Addressing Manuscript Reviews.md",
     "2023/09/202309061645 State-of-Play of Revisions.md",
