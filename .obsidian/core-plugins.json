@@ -4,15 +4,17 @@
   "switcher",
   "graph",
   "backlink",
+  "canvas",
+  "properties",
   "page-preview",
   "templates",
   "note-composer",
   "command-palette",
+  "bookmarks",
   "markdown-importer",
   "zk-prefixer",
   "outline",
   "word-count",
   "slides",
-  "open-with-default-app",
   "file-recovery"
 ]

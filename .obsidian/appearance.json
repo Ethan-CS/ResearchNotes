@@ -2,5 +2,6 @@
   "theme": "obsidian",
   "translucency": true,
   "cssTheme": "",
-  "baseFontSize": 18
+  "baseFontSize": 18,
+  "accentColor": ""
 }
