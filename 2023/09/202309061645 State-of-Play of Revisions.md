@@ -24,7 +24,7 @@ Status : #triage
  - [x] Is ER a good network to test this approach on? ER will have loops and the exact equations will not be exact, or are the cut-sets identified and the closures are done around them?
 *Hopefully addressed by the additional explanation for the first point.*
  - [x] In figure 11, I would lot the y=x diagonal to show that in most cases the points lie below it.
-*We agree that this seems a helpful addition, but we tried to plot this diagonal and because of the scale of the axes it served only to obscure points. To make it clear just how much faster one approach is over the other, we have added this text in the caption: "Note that the difference in axes scales is considerable, so the $y=x$ diagonal has not been plotted and it is otherwise clear that simulation was always faster than generating and solving equations."*
+*We agree that this seems a helpful addition, but we tried to plot this diagonal and because of the scale of the axes it served only to obscure points. To make it clear just how much faster one approach is over the other, we have added this text in the caption: "Note that the difference in axes scales is considerable, so the $y=x$ diagonal has not been plotted and it is clear that simulation was always faster than generating and solving equations."*
  - [ ] I was surprised to see no pseudocode or code to explain how the authors come up with the computational method/framework. I would add a whole section explaining this, what language and how the code works in general terms. At the end this is the main contribution of the paper. 
   
   
