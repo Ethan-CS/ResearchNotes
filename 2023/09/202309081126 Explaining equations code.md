@@ -22,11 +22,11 @@ Status : #triage
 		 - End
 	 - End
 	 - Set of terms added to RHS of equations
-	 - Length $l=1$
-	 - while $l\leq V(G)$:
-	 - For any term $t$ in set of terms added to equations:
-		 - If $t$ does not yet appear on the LHS of an equation in the list of equations, add an equation for it (and update the set of RHS terms)
- - 
+ - Length $l=1$
+ - while $l\leq V(G)$:
+ - For any term $t$ in set of terms added to equations:
+	 - If $t$ does not yet appear on the LHS of an equation in the list of equations, add an equation for it (and update the set of RHS terms)
+ - Return list of equations.
 
 
 -----
