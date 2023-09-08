@@ -25,7 +25,8 @@ Status : #triage
  - Length $l=1$
  - while $l\leq V(G)$:
  - For any term $t$ in set of terms added to equations:
-	 - If $t$ does not yet appear on the LHS of an equation in the list of equations, add an equation for it (and update the set of RHS terms)
+	 - If $t$ does not yet appear on the LHS of an equation in the list of equations, add an equation for it (and update the set of RHS terms):
+	 - Chain rule on $t$, e.g. 
  - Return list of equations.
 
 
