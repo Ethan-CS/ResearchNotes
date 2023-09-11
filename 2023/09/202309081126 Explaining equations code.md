@@ -13,7 +13,8 @@ Status : #triage
 ### Questions & thoughts:
 
 `generate_equations`: generates the required equations for a given graph $G$ and model $M$.
- - Are there any cut-vertices? If not, we do not consider closures, otherwise only consider closures if specified.
+ - Initialise a boolean variable `closures`
+ - If the graph contains at least one cut-vertices (and user has specified closures should be considered), `closures <- TRUE` else `FALSE`.
  - Initialise:
 	 - List `equations<-single_vertex_equations(...)` with equations for single-vertex terms:
 	 - For each vertex $v$ in $G$:
