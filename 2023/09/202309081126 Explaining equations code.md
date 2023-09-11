@@ -29,7 +29,7 @@ Status : #triage
 	 - 
  - Return list of equations.
 
-The first equations generated are those for single-vertex terms: a complete representation of the system dynamics includes equations for each vertex in each non-terminal model state. The equations for each term are determined using the master equation - this involves considering model projections that could lead into and out of the model projection represented by each term. Then, we recursively add to the system equations for moments of terms that have been added in previous equations (for example, if an equation for $\langle S_1 \rangle$ includes the term $\langle S_1 I_2\rangle$, we now need to add an equation for the latter) until we have written an equation for each term in the right hand side of any other equations.
+The first equations generated are those for single-vertex terms: a complete representation of the system dynamics includes equations for each vertex in each non-terminal model state. The equations for each term are determined using the master equation - this involves considering model projections that could lead into and out of the model projection represented by each term. Then, we recursively add to the system equations for moments of terms that have been added in previous equations (for example, if an equation for $\langle S_1 \rangle$ includes the term $\langle S_1 I_2\rangle$, we now need to add an equation for the latter) until we have written an equation for each term in the right hand side of any other equations. Each equation for terms of length two or more is added using the chain rule, as outlined in and subject to caveats from \cite{sharkey_2013}.
 
 
 -----
