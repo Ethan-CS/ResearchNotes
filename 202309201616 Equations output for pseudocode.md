@@ -46,6 +46,21 @@ Output for pseudocode:
     d[(S, 1), (S, 2)]/dt&=-\beta_{0, 1}*[(I, 0), (S, 1)]*[(S, 1), (S, 2)]/[(S, 1)]
 ```
 
+Maths output:
+```tex
+\dot{\langle S_0\rangle } &= -\beta_{1, 0}*\langle S_0 I_1\rangle 
+\dot{\langle S_1\rangle } &= -\beta_{0, 1}*\langle I_0 S_1\rangle  - \beta_{2, 1}*\langle S_1 I_2\rangle 
+\dot{\langle S_2\rangle } &= -\beta_{1, 2}*\langle I_1 S_2\rangle 
+\dot{\langle I_0\rangle } &= \beta_{1, 0}*\langle S_0 I_1\rangle  - \gamma_{0}*\langle I_0\rangle 
+\dot{\langle I_1\rangle } &= \beta_{0, 1}*\langle I_0 S_1\rangle  + \beta_{2, 1}*\langle S_1 I_2\rangle  - \gamma_{1}*\langle I_1\rangle 
+\dot{\langle I_2\rangle } &= \beta_{1, 2}*\langle I_1 S_2\rangle  - \gamma_{2}*\langle I_2\rangle 
+\dot{\langle I_0 S_1\rangle } &= -\beta_{2, 1}*\langle I_0 S_1\rangle *\langle S_1 I_2\rangle /\langle S_1\rangle  - \beta_{0, 1}*\langle I_0 S_1\rangle  - \gamma_{0}*\langle I_0 S_1\rangle 
+\dot{\langle I_1 S_2\rangle } &= \beta_{0, 1}*\langle I_0 S_1\rangle *\langle S_1 S_2\rangle /\langle S_1\rangle  - \beta_{1, 2}*\langle I_1 S_2\rangle  - \gamma_{1}*\langle I_1 S_2\rangle 
+\dot{\langle S_0 I_1\rangle } &= -\beta_{1, 0}*\langle S_0 I_1\rangle  + \beta_{2, 1}*\langle S_0 S_1\rangle *\langle S_1 I_2\rangle /\langle S_1\rangle  - \gamma_{1}*\langle S_0 I_1\rangle 
+\dot{\langle S_1 I_2\rangle } &= -\beta_{0, 1}*\langle I_0 S_1\rangle *\langle S_1 I_2\rangle /\langle S_1\rangle  - \beta_{2, 1}*\langle S_1 I_2\rangle  - \gamma_{2, 1}*\langle S_1 I_2\rangle 
+\dot{\langle S_1 S_2\rangle } &= -\beta_{0, 1}*\langle I_0 S_1\rangle *\langle S_1 S_2\rangle /\langle S_1\rangle 
+\dot{\langle S_0 S_1\rangle } &= -\beta_{2, 1}*\langle S_0 S_1\rangle *\langle S_1 I_2\rangle /\langle S_1\rangle 
+```
 
 -----
  
