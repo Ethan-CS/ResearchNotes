@@ -68,12 +68,14 @@ subject to:
 $$\
 \begin{align}
 \begin{cases}
-&\displaysty\sum_{\textrm{level}(v)=i}d_v\leq 1&\textrm{for each level }i\\
-&d_v+\sum_{u\textrm{ an ancestor of }v}d_u\leq 1&\textrm{for every leaf } v \textrm{ of } T\\
+&\displaystyle\sum_{\textrm{level}(v)=i}d_v\leq 1&\textrm{for each level }i\\
+&d_v+\displaystyle\sum_{u\textrm{ an ancestor of }v}d_u\leq 1&\textrm{for every leaf } v \textrm{ of } T\\
 &d_v\in\{0, 1\}&
 \end{cases}
 \end{align}
 $$
+
+Finbow and MacGillivray conjecture that there is a constant $c$ such that the optimum solution to the LP relaxation of the 0-1 integer program above is at most $c$ times the optimum integral solution i.e., linear programming gives a $c$-approximation algorithm for the Firefighter Problem on trees.
 
 -----
  
