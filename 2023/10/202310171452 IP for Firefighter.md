@@ -21,11 +21,12 @@ b_{x, t}&=\begin{cases}
 \end{cases}
 \\
 d_{x, t}&= \begin{cases}
+1 \hspace{10pt} x \textrm{ defended before or at time } t\\
 0 \hspace{10pt} \textrm{otherwise}
 \end{cases}
 \end{align}
 $$
-
+**Explanation.** "The first (second) set of constraints assures that a vertex burning (defended) at time t − 1 is still burning (defended) at time t. The third set of constraints assures that every neighbour of a vertex burning at time t−1 is burning or defended at time t. The fourth set of constraints assures that no vertex can be both burning and defended at any time. The fifth set of constraints prevents a vertex with no burning neighbours at time t − 1 from burning at time t. The sixth set of constraints guarantees that at most d firefighters are used per time step. Finally, the next two sets of constraints initialize the variables corresponding to time t = 0."
 
 -----
  
@@ -33,6 +34,8 @@ $$
 
 
 **Source:** 
+
+Stephen Fin
 
 
 **Reference:** 
