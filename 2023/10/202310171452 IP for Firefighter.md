@@ -62,7 +62,7 @@ $$
 7. Initialise the variables corresponding to time $t = 0$
 8. Initialise the variables corresponding to time $t = 0$
 
-Linear relaxation:
+Linear relaxation for Firefighter problem on trees:
 $$\textrm{max}\sum_{v\in V}d_vw(v)$$
 subject to:
 $$\
@@ -80,6 +80,17 @@ Finbow and MacGillivray conjecture that there is a constant $c$ such that the op
 -----
  
 **Consider:**
+
+ - Write IP and LP-relaxation for new problem(s) (pick one to start with)
+	 - This transforms NP-hard problem to a poly. time solvable one (IP->LP)
+ - Implementation? Start looking into:
+	 - How this works (language, package. etc.)
+	 - What FF implementations look like
+	 - Kind of results I should aim for from an implementation - what is useful, what is insightful, etc.
+ - Feasibility of proving conjecture, for new problems or FM conjecture (if not already solved).
+	 - This was still an open problem as of 2021 new survey of Firefighter by MacGillivray's MSc student, Connor Wagner.
+	 - Finbow and MacGillivray give pointers to experimental results suggesting such a $c$ exists - good starting place
+	 - Nice summary of approximation algorithms: [link]https://stanford.edu/~rezab/discrete/Notes/10.pdf
 
 
 **Source:** 
