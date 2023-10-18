@@ -12,6 +12,8 @@ Status : #triage
 
 ### Questions & thoughts:
 
+(notation: $MVS(G,F;d)$ denotes the max. number of vertices that can be saved in G when the fires break out at vertices in F over all possible ways of defending vertices using d firefighters.)
+
 The following IP determines $MVS(G,F;d)$ for any $f$-rooted graph $(G,F)$. Here, $T$ is an upper bound on the number of time units needed to contain the fire, and for $0\leq t\leq T$ and $x\in V$, the boolean variables $b_{x,t}$ and $d_{x,t}$ are defined by
 $$
 \begin{align}
