@@ -17,7 +17,9 @@ Original lemma (1):[^1] given a rooted graph $(G, r)$ on $n$ vertices and $m$ ed
 Original proof:
  - For each integer $i=1, \dots, k$, define $S_i=\{v_1, \dots, v_i\}$.
  - Play Firefighter: fire breaks out at $r$
- - Use an adapted BFS to check that for each $i=1,\dots,k$, $v_i$ is neither burned nor defended at time $t=i$ i.e., $v_i\notin R_i(r)$ where $R_1(r)=\{r\}$
+ - Use an adapted BFS to check that for each $i=1,\dots,k$, $v_i$ is neither burned nor defended at time $t=i$ i.e., $v_i\notin R_i(r)$ where $R_1(r)=\{r\}$ and $R_i(r)=N_{G\setminus S_{i-1}}[R_i-1(r)]$.
+ - By playing Firefighter, we can check the game ends at time step $k$.
+ - If the above has been successful, we can compute the number of vertices saved by 
 
 
 
