@@ -31,19 +31,19 @@ Input:
 - Graph G
 - Integer k
 - Root vertex r
+- Strategy S
 
 Output:
 - Number of saved vertices
 
-1. Initialise an empty list S
-2. Initialise a list R = {R_1={r}}
+2. Initialise a list R = [R_1=[r]]
 3. Initialise a counter saved_vertices to keep track of saved vertices.
 
 4. For i from 1 to k:
-   a. Define S_i as the first i vertices in the graph G.
+   a. Define S_i as the first i vertices in the strategy S.
    b. Play the Firefighter game, starting with a fire breaking out at vertex r.
-   c. Use an adapted BFS (Breadth-First Search) to update the set R_i based on the current state of the graph and sets S_i and R_{i-1}.
-   d. Check whether vertex v_i (the i-th vertex in S_i) is neither burned nor defended at time t=i.
+   c. Use an adapted BFS (Breadth-First Search) to update the set R_i based on the current state of the graph
+   d. Check whether the i-th vertex in S_i is neither burned nor defended at time t=i.
    e. If v_i is safe, increment the saved_vertices counter.
 
 5. Check if the game ends at time step k by comparing saved_vertices to k.
