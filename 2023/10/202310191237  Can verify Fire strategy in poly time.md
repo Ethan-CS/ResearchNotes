@@ -42,7 +42,7 @@ Output:
 4. For i from 1 to k:
    a. Define S_i as the first i vertices in the strategy S.
    b. Play the Firefighter game, starting with a fire breaking out at vertex r.
-   c. Use an adapted BFS (Breadth-First Search) to update the set R_i based on the current state of the graph
+   c. Use an adapted BFS (Breadth-First Search) to update the sets R_i based on the current state of the graph
    d. Check whether the i-th vertex in S_i is neither burned nor defended at time t=i.
    e. If v_i is safe, increment the saved_vertices counter.
 
