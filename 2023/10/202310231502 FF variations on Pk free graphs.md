@@ -22,6 +22,8 @@ Original proof outline:
  - Hence, $t\leq l-1$.
 
 
+
+
 -----
  
 **Consider:**
