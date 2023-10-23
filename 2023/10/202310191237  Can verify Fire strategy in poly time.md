@@ -19,7 +19,42 @@ Original proof:
  - Play Firefighter: fire breaks out at $r$
  - Use an adapted BFS to check that for each $i=1,\dots,k$, $v_i$ is neither burned nor defended at time $t=i$ i.e., $v_i\notin R_i(r)$ where $R_1(r)=\{r\}$ and $R_i(r)=N_{G\setminus S_{i-1}}[R_i-1(r)]$.
  - By playing Firefighter, we can check the game ends at time step $k$.
- - If the above has been successful, we can compute the number of vertices saved by 
+ - If the above has been successful, we can compute the number of vertices saved by $S$ as $n$ minus number of vertices reachable from $r$ in $G\setminus S$ using a BFS from $r$ in $G\setminus S$
+
+Pseudocode:
+```
+Algorithm: Computing Saved Vertices in a Firefighter Game
+
+Info: this proceeds iteratively, defining sets S_i and checking vertex safety at each step while employing an adapted BFS for evaluating the state of the graph.
+
+Input:
+- Graph G
+- Integer k
+- Root vertex r
+
+Output:
+- Number of saved vertices
+
+1. Initialise an empty list S
+2. Initialise a list R = {R_1={r}}
+3. Initialise a counter saved_vertices to keep track of saved vertices.
+
+4. For i from 1 to k:
+   a. Define S_i as the first i vertices in the graph G.
+   b. Play the Firefighter game, starting with a fire breaking out at vertex r.
+   c. Use an adapted BFS (Breadth-First Search) to update the set R_i based on the current state of the graph and sets S_i and R_{i-1}.
+   d. Check whether vertex v_i (the i-th vertex in S_i) is neither burned nor defended at time t=i.
+   e. If v_i is safe, increment the saved_vertices counter.
+
+5. Check if the game ends at time step k by comparing saved_vertices to k.
+
+6. If the game ends (i.e., saved_vertices equals k), compute the number of vertices saved by set S as follows:
+   a. Find the number of vertices reachable from the starting vertex r in the subgraph G\S (complement of S) using a BFS.
+   b. Subtract the number of reachable vertices from the total number of vertices in G to determine the saved vertices.
+
+7. Return the computed number of saved vertices.
+
+```
 
 
 
