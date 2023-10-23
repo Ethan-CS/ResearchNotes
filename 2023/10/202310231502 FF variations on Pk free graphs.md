@@ -22,6 +22,11 @@ Original proof outline:
  - Hence, $t\leq l-1$.
 
 
+Adapted theorem for arbitrary cost function Firefighter (to keep as general as possible?): **CFire can be solved in time ?? on $P_k-free graphs.**
+
+ - Let $S=[[v_{1_1}, v_{1_2}, \dots], [v_{2_1}, \dots], \dots, [v_{t_1}, \dots]]$ be an optimal strategy
+- Suppose that $\bigcup_{s\in S}|s|$ is maximal in optimal strategies of CFire
+- As $S$ is optimal, there is an induced path between $r$ and 
 
 
 -----
