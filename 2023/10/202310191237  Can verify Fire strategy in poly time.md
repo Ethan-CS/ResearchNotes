@@ -21,32 +21,7 @@ Original proof:
  - By playing Firefighter, we can check the game ends at time step $k$.
  - If the above has been successful, we can compute the number of vertices saved by $S$ as $n$ minus number of vertices reachable from $r$ in $G\setminus S$ using a BFS from $r$ in $G\setminus S$
 
-Pseudocode:
-```
-Algorithm: verifying strategy and computing saved vertices for a Firefighter game
 
-Input:
-- Graph G
-- Integer k
-- Root vertex r
-- Strategy S
-
-Output:
-- Number of saved vertices
-
-1. Initialise a list R=[R_1=[r]]
-2. Initialise a counter saved_vertices to keep track of saved vertices.
-3. Play the Firefighter game by starting with a fire breaking out at vertex r.
-4. Use an adapted BFS (Breadth-First Search) to update the sets R_i based on the current state of the graph
-d. Check whether the i-th vertex in S is neither burned nor defended at time t=i.
-e. If v_i is safe, increment the saved_vertices counter.
-1. Check if the game ends at time step k by comparing saved_vertices to k.
-2. If the game ends (i.e., saved_vertices equals k), compute the number of vertices saved by set S as follows:
-   a. Find the number of vertices reachable from the starting vertex r in the subgraph G\S (complement of S) using a BFS.
-   b. Subtract the number of reachable vertices from the total number of vertices in G to determine the saved vertices.
-6. Return the computed number of saved vertices.
-
-```
 
 
 
