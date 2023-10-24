@@ -6,7 +6,7 @@ Status : #triage
 
 # Firefighter when parameterised by length of longest induced path in graph
 
-**Previous note:** [[202310231502 FF variations on Pk free graphs]]
+**Previous note:** [[202310231502 FF Optimal strategy number of defences]]
 
 -----
 
