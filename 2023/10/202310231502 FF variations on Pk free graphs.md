@@ -28,7 +28,7 @@ Adapted theorem for arbitrary cost function Firefighter (to keep as general as p
 - As $S$ is optimal, there is an induced path on burning vertices between $r$ and a neighbour of $v_{t_h}$, the final vertex defended. Let $P$ be the shortest such path and let its length be $l$.
 - $P$ contains at least $d+1$ vertices, else $v_{t_h}$ would burn before it could be defended. Thus, $d\leq l-1$.
 
-45
+
 
 -----
  
