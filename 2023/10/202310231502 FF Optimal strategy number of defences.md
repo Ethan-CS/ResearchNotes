@@ -29,10 +29,6 @@ Adapted lemma for arbitrary cost function Firefighter (to keep as general as pos
 - $P$ contains at least $d+1$ vertices, else $v_{t_h}$ would burn before it could be defended. Thus, $d\leq l-1$.
 
 
-Original theorem: Firefighter can be solved in time 
-
-
-
 
 -----
  
