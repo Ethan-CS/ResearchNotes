@@ -20,7 +20,12 @@ Original proof:
  - Use the following algorithm:
 	 - Enumerate all ordered subsets $S\subseteq V(G)$ of size at most $k-2$ in $O(n^{k-2})$ time.
 	 - For each such $S$:
-		 - Use [[202310191237  Can verify Fire strategy in poly time|this lemma]] to verify $S$ is a valid strategy and count number of saved vertices in $O(n+m)$ time
+		 - Use [[202310191237  Can verify Fire strategy in poly time|this lemma]] to verify $S$ is a valid strategy and count number of saved vertices in $O(n+m)$ time.
+	 - Return the valid strategy $S$ that saves the largest number of vertices
+
+Adapted theorem: CFire can be solved in time (still the same?) on $P_k$-free graphs on $n$ vertices with $m$ edges.
+
+Proof: as above, with adapted lemmas (in same links).
 
 -----
  
