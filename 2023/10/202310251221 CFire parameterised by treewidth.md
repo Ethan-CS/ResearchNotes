@@ -18,7 +18,7 @@ Let $(G, r, k, b, c:V\rightarrow\mathbb{Z})$ be an instance of CFire such that t
 $$
 \begin{align}
 \textrm{NextToBurn}&(B_{i-1}, B, p_1^1,\dots, p_1^{b_1},\dots,p_i^1, \dots, p_i^{b_i})\\
-&:=\forall v\in V(G)\left(\left(v\in B_{i-1}\vee\exists u\in V(G) \left(\right)\right)\right)
+&:=\forall v\in V(G)\left(\left(v\in B_{i-1}\vee\exists u\in V(G) \left(u\in B_{i-1}\wedge A(u, v) \wedge \left( \bigwedge_{1\leq j \leq i, ~1\leq h\leq b_j}\neg(v=p_j^h)\right)\right)\right)\iffv\inB_i\right)
 \end{align}
 $$
 
