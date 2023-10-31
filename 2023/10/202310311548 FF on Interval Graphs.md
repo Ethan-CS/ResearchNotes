@@ -12,7 +12,7 @@ Status : #triage
 
 ### Questions & thoughts:
 
-Original lemma:[^1] _Let_ $(G, r)$ _be an instance of_ Firefighter Reserve Deployment _such that $G$ is an AT-free graph. For any minimal strategy for the Firefighting-with-Reserve game on_ $(G, r)$, the last line of defence is the union of at most two minimal separators of $G$._
+**Original lemma:**[^1] _Let_ $(G, r)$ _be an instance of_ Firefighter Reserve Deployment _such that $G$ is an AT-free graph. For any minimal strategy for the Firefighting-with-Reserve game on_ $(G, r)$, the last line of defence is the union of at most two minimal separators of $G$._
 
 Original proof.
 1. Let:
@@ -28,6 +28,15 @@ Conclusion 1: $N(R_i)$ is a minimal separator of $G$ for each $i\in\{1, \dots, p
 7. For each $j\in I$, the component of $G-N(R_j)$ not equal to $R_j$ contains BP, and thus in particular it contains $(\bigcup_{i\in I}N(R_i))\setminus N(R_j)$
 8. Combined with the assumption that _G_ is AT-free, it then follows from [Broersma et al. Lemma 20](https://www.sciencedirect.com/science/article/pii/S0304397515010853#br0200) that $|I|\leq2$.
 Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma follows. 
+
+(Then, a couple of lemmas plus a previous corollary that gives us an optimal strategy always defends vertices neighbouring a burning vertex combine to give the following corollary)
+
+**Original Corollary**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. There is an optimal strategy for this problem that, for $u$ and $v$ the left- and right-most burning vertices at the start of timestep $t\geq 1$, in each timestep protects the $f_l$ leftmost vertices that neighbour $u$ and $f_r$ rightmost vertices that neighbour $v$ for an appropriate choice of $f_l$ and $f_r$.
+
+All this is used in the proof of the following, which is a dynamic programming approach.
+
+**Original Theorem:**[^1] Firefighter can be solved in time $O(n^7)$ on interval graphs on $n$ vertices.
+
 
 
 -----
