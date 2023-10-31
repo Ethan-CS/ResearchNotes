@@ -48,20 +48,26 @@ Consider the following table: $A(s_l,s_r,u_l,u_r,f)$ is the max. number of verti
  - $u_l$ is the rightmost interval not ending to the right of the right endpoint of $s_l$ that is unburned and unprotected, 
  - $u_r$ is the leftmost interval not ending to the left of the left endpoint of $s_r$ that is unburned and unprotected, and 
  - $f$ is the size of the reserve. 
-We also allow $u_l$ and $u_r$ to be the special symbol \ to signify that the fire is contained on the left respectively the right side of the graph. If ul ̸=⊥̸= ur , then we set
+We also allow $u_l$ and $u_r$ to be the special symbol $\perp$ to signify that the fire is contained on the left or right side of the graph respectively.
 
-A(sl,sr,ul,ur,f)= max {fl+fr+A(sl′,sr′,ul′,ur′,f−fl−fr+1)}. fl,fr≥0
+If $u_l \neq\perp = u_r$ , then we set
 
-fl+fr≤f
+$A(s_l,s_r,u_l,u_r,f)= \displaystyle\textrm{max}_{fl,fr≥0, fl+fr≤f} \{f_l+f_r+A(s_l^\prime,sr^\prime,ul^\prime,ur^\prime,f−f_l−f_r+1)\}$
 
-In the formula, sl′ is the (fl +1)-th leftmost unburned interval intersecting the left endpoint of sl. This interval can be computed from ul. Similarly, sr′ is the (fr +1)-th rightmost unburned interval intersecting the right endpoint of sr, which can be computed from ur. If sl′ does not exist, we set ul′ to ⊥ and sl′ to sl. Otherwise, we set ul′ to the rightmost nonneighbor of sl ending to left of sl. If sr′ does not exist, we set ur′ to ⊥ and sr′ to sr. Otherwise, we set ur′ to the leftmost non-neighbor of sr starting to the right of sr.
+In the formula:
+ - $s_l^\prime$ is the $(f_l +1$)-th leftmost unburned interval intersecting the left endpoint of $s_l$. 
+	 - This interval can be computed from $u_l$.
+ - Similarly, $s_r^\prime$ is the $(f_r +1)$-th rightmost unburned interval intersecting the right endpoint of sr, which can be computed from ur. 
+ - If $s_l^\prime$ does not exist, we set $u_l^\prime=\perp$ and $s_l^\prime=s_l$. 
+ - Otherwise, we set $u_l^\prime$ to the rightmost non-neighbour of $s_l$ ending to left of $s_l$. 
+ - If $s_r^\prime$ does not exist, we set $u_r^\prime=\perp$ and $s_r^\prime=s_r$. 
+ - Otherwise, we set $u_r^\prime$ to the leftmost non-neighbour of $s_r$ starting to the right of $s_r$.
 
-If say ul =⊥̸= ur , the formula simplifies to  
-A(sl,sr,ul,ur,f)= max{fr+A(sl,sr′,ul,ur′,f−fr+1)},
-
-0≤fr≤f
-
-where the meaning of sr′ and ur′ is the same as before. A similar formula can be given in case ul ̸=⊥=ur. Finally, for any sl,sr, f , we set A(sl,sr,⊥,⊥, f ) to the number of vertices in the connected components of G \(Xl ∪ Xr) that do not contain s, where Xl is the set of vertices intersecting the left endpoint of sl and Xr is the set of vertices intersecting the right endpoint of sr.
+If say $u_l =\perp\neq ur$ , the formula simplifies to  
+$A(s_l,s_r,u_l,u_r,f)= \textrm{max}_{0≤f_r≤f}\{f_r+A(s_l,s_r^\prime,u_l,u_r^\prime,f−f_r+1)\}$
+where the meaning of $s_r^\prime$ and $u_r^\prime$ is the same as before. 
+ 
+ - Finally, for any sl,sr, f , we set A(sl,sr,⊥,⊥, f ) to the number of vertices in the connected components of G \(Xl ∪ Xr) that do not contain s, where Xl is the set of vertices intersecting the left endpoint of sl and Xr is the set of vertices intersecting the right endpoint of sr.
 
 We now compute p∗ = A(s,s,ul,ur,1), where ul is the leftmost neighbor of s and ur is the rightmost neighbor of s. Then there is a strategy that saves p∗ vertices of G.
 
