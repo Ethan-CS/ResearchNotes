@@ -13,6 +13,7 @@ Status : #triage
 ## High-level overview
 
  - Lemma 9 and Corollary 12 give correctness of algorithm in Theorem 13.
+ - Lemma 2 is used to give corollary 3 and so FF and FWR can be used interchangeably where convenient.
  - Lemma 10, lemma 11 and corollary 3 combined give corollary 12.
 
 
@@ -22,7 +23,7 @@ Status : #triage
 
 This lemma is used to prove correctness of a DP algorithm in Theorem 13.
 
-**Lemma 9:**[^1] _Let_ $(G, r)$ _be an instance of_ Firefighter Reserve Deployment _such that $G$ is an AT-free graph. For any minimal strategy for the Firefighting-with-Reserve game on_ $(G, r)$, the last line of defence is the union of at most two minimal separators of $G$._
+***Lemma 9:**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an AT-free graph. For any minimal strategy for the Firefighting-with-Reserve game on $(G, r)$, the last line of defence is the union of at most two minimal separators of $G$.*
 
 **Proof.**
 1. Let:
@@ -31,33 +32,48 @@ This lemma is used to prove correctness of a DP algorithm in Theorem 13.
 	 - $BP$ denote the set of vertices that either burn or are protected. 
 2. Observe that $BP$ is connected, else strategy is not minimal. 
 3. Observe $R_1, \dots, R_p$  are connected components of $G[V(G)\setminus BP]$
-Conclusion 1: $N(R_i)$ is a minimal separator of $G$ for each $i\in\{1, \dots, p\}$
+**C1:** $N(R_i)$ is a minimal separator of $G$ for each $i\in\{1, \dots, p\}$
 4. Consider the partial order that is induced on  by the inclusion-relation
 5. Let $i\subseteq\{1, \dots, p\}$ be the set of indices corresponding to the maximal elements of this relation. 
 6. Notice the elements of $\{N(R_i)\}_{i\in I}$ are minimal separators that are incomparable with respect to set inclusion. 
 7. For each $j\in I$, the component of $G-N(R_j)$ not equal to $R_j$ contains BP, and thus in particular it contains $(\bigcup_{i\in I}N(R_i))\setminus N(R_j)$
 8. Combined with the assumption that _G_ is AT-free, it then follows from [Broersma et al. Lemma 20](https://www.sciencedirect.com/science/article/pii/S0304397515010853#br0200) that $|I|\leq2$.
-Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma follows. 
+Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma follows. $\blacksquare$
 
 -----
 
-**Lemma 10:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Consider any strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t \geq 1$, let $u$ denote the leftmost burning vertex and let $v$ denote the rightmost burning vertex. Then every vertex $w$ with $r(u) < l(w) < r(w) < l(v)$ is either burning or protected. Moreover, any vertex that neighbours a burning vertex and that is neither burning nor protected at the start of time step $t$ is in $N(u) \cup N(v)$.
+***Lemma 10:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Consider any strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t \geq 1$, let $u$ denote the leftmost burning vertex and let $v$ denote the rightmost burning vertex. Then every vertex $w$ with $r(u) < l(w) < r(w) < l(v)$ is either burning or protected. Moreover, any vertex that neighbours a burning vertex and that is neither burning nor protected at the start of time step $t$ is in $N(u) \cup N(v)$.*
 
 -----
 
-**Lemma 11:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Let $F_1, \dots, F_k$ be an optimal strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t\geq 1$, let $v$ denote the rightmost burning vertex. Let $Y$ denote the set of vertices in $\bigcup^t_{i=1} Fi$ that neighbour $v$ and do not neighbour any burning vertex in time step $t − 1,...,0$. Then $F_1^\prime,\dots,F_k^\prime$ is also an optimal strategy for the Firefighting-with-Reserve game on $(G,s)$, where $F_i^\prime=F_i \setminus Y$ for all $i\neq t$ and $F_t^\prime$ consists of $F_t\setminus Y$ and the $|Y|$ rightmost intervals that are unburned at the start of time step $t$ and that intersect $v$.
+***Lemma 11:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Let $F_1, \dots, F_k$ be an optimal strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t\geq 1$, let $v$ denote the rightmost burning vertex. Let $Y$ denote the set of vertices in $\bigcup^t_{i=1} Fi$ that neighbour $v$ and do not neighbour any burning vertex in time step $t − 1,...,0$. Then $F_1^\prime,\dots,F_k^\prime$ is also an optimal strategy for the Firefighting-with-Reserve game on $(G,s)$, where $F_i^\prime=F_i \setminus Y$ for all $i\neq t$ and $F_t^\prime$ consists of $F_t\setminus Y$ and the $|Y|$ rightmost intervals that are unburned at the start of time step $t$ and that intersect $v$.*
 
 -----
 
-**(Previous) Corollary 3:**[^1] Let $(G, s)$ be an instance of Firefighter Reserve Deployment. There exists an optimal strategy for the Firefighting-with- Reserve game on $(G , s)$ that only protects vertices that neighbour a vertex that is on fire.
+***(Earlier) Lemma 2:** The Firefighter and the Firefighter Reserve Deployment problem are equivalent.*  
+
+**Proof.** 
+ 1. Consider a strategy $v_1,\dots,v_k$ for the Firefighting game.
+ 2. At time step t, if the fire reaches vertices $F_t \subseteq \{v_1,\dots,v_k\}$ at time step $t +1$ in $G-\bigcup_{i=1}^{t−1}F_i$, deploy the firefighters in $F_t$ at time $t$. 
+**C1:** Because $v_1,\dots,v_k$ is a valid strategy, this must also be a valid strategy. 
+**C2:** this new strategy saves exactly the same set of vertices.  
+3. Consider a strategy $F_1,\dots,F_k$ for the Firefighting-with-Reserve game. 
+4. Consider any ordering $v_1,\dots,v_k^\prime$ of the vertices in $F_1,...,F_k$ such that $v_a \in F_i, v_b \in F_j$ for $i< j$ implies $a<b$. 
+**C1:** Because $F_1,\dots,F_k$ is a valid strategy, this ordering is also a valid strategy. 
+**C2:** this new strategy saves exactly the same set of vertices.  
+**C:** Firefighter and Firefighter-Reserve-Deployment are equivalent problems.
+
+Consider the two transformations in the above proof. If we apply the second transformation on a strategy for the Firefighting-with-Reserve game, and then the first, we obtain a strategy for the Firefighting-with-Reserve game with the following property.
+
+***(Earlier) Corollary 3:**[^1] Let $(G, s)$ be an instance of Firefighter Reserve Deployment. There exists an optimal strategy for the Firefighting-with- Reserve game on $(G , s)$ that only protects vertices that neighbour a vertex that is on fire.*
 
 -----
 
-**Original Corollary (of Lemmas 10 & 11 and Corollary 3):**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. There is an optimal strategy for this problem that, for $u$ and $v$ the left- and right-most burning vertices at the start of timestep $t\geq 1$, in each timestep protects the $f_l$ leftmost vertices that neighbour $u$ and $f_r$ rightmost vertices that neighbour $v$ for an appropriate choice of $f_l$ and $f_r$.
+***Original Corollary (of Lemmas 10 & 11 and Corollary 3):**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. There is an optimal strategy for this problem that, for $u$ and $v$ the left- and right-most burning vertices at the start of timestep $t\geq 1$, in each timestep protects the $f_l$ leftmost vertices that neighbour $u$ and $f_r$ rightmost vertices that neighbour $v$ for an appropriate choice of $f_l$ and $f_r$.*
 
 -----
 
-**Theorem 13:**[^1] Firefighter can be solved in time $O(n^7)$ on interval graphs on $n$ vertices.
+***Theorem 13:**[^1] Firefighter can be solved in time $O(n^7)$ on interval graphs on $n$ vertices.*
 
 **Proof.**
 Let ($G,s)$ be an instance of Firefighter such that $G$ is an interval graph on $n$ vertices. Instead of solving Firefighter on $(G , s)$, we solve Firefighter Reserve Deployment on $(G , s)$, which is equivalent according to (another previous lemma).
