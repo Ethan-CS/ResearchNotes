@@ -1,4 +1,4 @@
-Tags :
+Tags : #cfire 
 Zettel :  20231031-1347
 Status : #triage 
 
