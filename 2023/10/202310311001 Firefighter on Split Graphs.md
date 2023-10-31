@@ -39,8 +39,15 @@ Case 2: $r\in I$.
  - If $\textrm{deg}(r)=1$, it is optimal to protect the single neighbour of $r$ in $K$, saving all vertices in $G\setminus\{r\}$
  - Hence, assume $\textrm{deg}(r)\geq 2$.
  - Note split graphs are $P_5$-free - then by [[202310231502 FF Optimal strategy number of defences|a previous lemma]], we can protect at most three vertices.
- - Suppose there is an optimal strategu that defends only in $I$
-	 - Fire spreads from $r$ to every vertex of $n
+ - Suppose there is an optimal strategy that defends only in $I$
+	 - Fire spreads first from $r$ to every vertex of $N(r)\subseteq K$, then to at least every vertex in rest of $K$ (minus one defence), then to unprotected vertices of $I$ (again, less one defence).
+	 - Hence, any such strategy saves at most three vertices.
+	 - Hence, if there is such an optimal strategy only protecting vertices from $I$, in first two time-steps it protects a neighbour in $I\setminus\{r\}$ of a vertex in $N(r)$ or any other vertex of $I\setminus\{r\}$ otherwise, then a vertex of $I$ not neighbouring any vertex in $I\setminus\{r\}$ if it exists.
+	 - We can find such a strategy in $O(n+m)$ time.
+ - Suppose there is an optimal strategy that defends two or more vertices from $K$.
+	 - Since $r$ has degree at least 2, fire first spreads to at least one vertex in $K$, then to unprotected vertices of $K$.
+	 - Since $r$ has degree at least 2 by assumption, fire spreads first to at least one vertex of $K$, then to all other unprotected vertices of $K$.
+	 - Such an optimal strategy protects exactly two vertices $u, v\in K$
 
 -----
  
