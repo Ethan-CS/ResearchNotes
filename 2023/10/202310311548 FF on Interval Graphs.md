@@ -16,8 +16,6 @@ Status : #triage
  - Lemma 2 is used to give corollary 3 and so FF and FWR can be used interchangeably where convenient.
  - Lemma 10, lemma 11 and corollary 3 combined give corollary 12.
 
-
-
 -----
 
 
@@ -38,9 +36,11 @@ This lemma is used to prove correctness of a DP algorithm in Theorem 13.
 6. Notice the elements of $\{N(R_i)\}_{i\in I}$ are minimal separators that are incomparable with respect to set inclusion. 
 7. For each $j\in I$, the component of $G-N(R_j)$ not equal to $R_j$ contains BP, and thus in particular it contains $(\bigcup_{i\in I}N(R_i))\setminus N(R_j)$
 8. Combined with the assumption that _G_ is AT-free, it then follows from [Broersma et al. Lemma 20](https://www.sciencedirect.com/science/article/pii/S0304397515010853#br0200) that $|I|\leq2$.
-Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma follows. $\blacksquare$
+**C:** As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma follows. $\blacksquare$
 
 -----
+
+This is in Lemma 11 and for a corollary, itself used for Theorem 13.
 
 ***Lemma 10:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Consider any strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t \geq 1$, let $u$ denote the leftmost burning vertex and let $v$ denote the rightmost burning vertex. Then every vertex $w$ with $r(u) < l(w) < r(w) < l(v)$ is either burning or protected. Moreover, any vertex that neighbours a burning vertex and that is neither burning nor protected at the start of time step $t$ is in $N(u) \cup N(v)$.
 
@@ -53,17 +53,31 @@ Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma f
 	- $u$ is the leftmost unprotected neighbour of $u^\prime$ (else $u = u^\prime$)
 	- $v$ is the rightmost unprotected neighbour of $v^\prime$ (else $v = v^\prime$)
 4. Note that any vertex $w$ that satisfies $r(u) < l(w) < r(w) < l(v)$ also satisfies 
-	$(r(u^\prime) < l(w) < r(w) < l(v^\prime))$ or $((u) < l(w) < r(u′))$ or $(l(v′)<r(w)<l(v))$
-5. In the first case, by induction $w$ is still either burning or protected at the start of time step$ t$.
-6. In the second and third cases, since $u$ is a neighbour of $u^\prime$ (or $u=u^\prime$) and $v$ is a neighbour of $v′$ (or $v=v^\prime$), $w$ is a neighbour of $u^\prime$ or of $v^\prime$ respectively, thus $w$ is burning or protected at the start of time step $t$. 
-7. Therefore, any vertex $x$ that neighbours a burning vertex and that is neither burning nor protected at time step $t$ satisfies $l(x) < r(u)$ or $l(v) < r(x)$. 
+	- $(r(u^\prime) < l(w) < r(w) < l(v^\prime))$, or
+	- $((u) < l(w) < r(u′))$, or 
+	- $(l(v′)<r(w)<l(v))$
+1. In the first case, by induction $w$ is still either burning or protected at the start of time step $t$.
+2. In the second and third cases, since $u$ is a neighbour of $u^\prime$ (or $u=u^\prime$) and $v$ is a neighbour of $v′$ (or $v=v^\prime$), $w$ is a neighbour of $u^\prime$ or of $v^\prime$ respectively, thus $w$ is burning or protected at the start of time step $t$. 
+3. Therefore, any vertex $x$ that neighbours a burning vertex and that is neither burning nor protected at time step $t$ satisfies $l(x) < r(u)$ or $l(v) < r(x)$. 
 **C:** Since $u$ and $v$ are the leftmost and rightmost vertex respectively that burns at time step $t$, $x$ neighbours $u$ or $v$.
 
 -----
 
+This is also used for a corollary that is itself used for Theorem 13.
+
 ***Lemma 11:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Let $F_1, \dots, F_k$ be an optimal strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t\geq 1$, let $v$ denote the rightmost burning vertex. Let $Y$ denote the set of vertices in $\bigcup^t_{i=1} Fi$ that neighbour $v$ and do not neighbour any burning vertex in time step $t − 1,...,0$. Then $F_1^\prime,\dots,F_k^\prime$ is also an optimal strategy for the Firefighting-with-Reserve game on $(G,s)$, where $F_i^\prime=F_i \setminus Y$ for all $i\neq t$ and $F_t^\prime$ consists of $F_t\setminus Y$ and the $|Y|$ rightmost intervals that are unburned at the start of time step $t$ and that intersect $v$.*
 
+**Proof.**
+1. Observe that $F_1 \setminus Y,\dots,F_{t−1} \setminus Y, F_t \cup Y, F_{t+1},\dots,F_k$ is also an optimal strategy, because we can keep defence to be placed on the vertices of $Y$ in the reserve until time step $t$.
+2. Let $Y^\prime$ be the $|Y|$ rightmost neighbours of $v$ that are unburned at time step $t$.
+3. Suppose that $Y \neq Y^\prime$.
+4. Let $I^\prime$ be any interval of $Y^\prime$ not in $Y$ and let $I$ be any interval of $Y$ not in $Y^\prime$.
+5. Using Lemma 10, note that the set of unburned neighbours of $I$ at time step $t+1$ is a subset of the set of unburned neighbours of $I^\prime$ at time step $t + 1$, as both $I$ and $I^\prime$ intersect $v$, but $I′$ ends further to the right than $I$. 
+**C:** Hence, $F_1^\prime,\dots,F_k^\prime$ saves at least as many vertices as $F_1,\dots, F_k$, and thus is also optimal. $\blacksquare$
+
 -----
+
+This is also used for a corollary that is itself used for Theorem 13.
 
 ***(Earlier) Lemma 2:** The Firefighter and the Firefighter Reserve Deployment problem are equivalent.*  
 
@@ -84,7 +98,9 @@ Consider the two transformations in the above proof. If we apply the second tran
 
 -----
 
-***Original Corollary (of Lemmas 10 & 11 and Corollary 3):**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. There is an optimal strategy for this problem that, for $u$ and $v$ the left- and right-most burning vertices at the start of timestep $t\geq 1$, in each timestep protects the $f_l$ leftmost vertices that neighbour $u$ and $f_r$ rightmost vertices that neighbour $v$ for an appropriate choice of $f_l$ and $f_r$.*
+This is used to show the correctness of the DP algorithm used to prove Theorem 13.
+
+***Corollary (of Lemmas 10 & 11 and Corollary 3) 12:**[^1] Let $(G, r)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. There is an optimal strategy for this problem that, for $u$ and $v$ the left- and right-most burning vertices at the start of timestep $t\geq 1$, in each timestep protects the $f_l$ leftmost vertices that neighbour $u$ and $f_r$ rightmost vertices that neighbour $v$ for an appropriate choice of $f_l$ and $f_r$.*
 
 -----
 
