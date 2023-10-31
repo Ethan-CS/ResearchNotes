@@ -14,8 +14,17 @@ Status : #triage
 
 Theorem 8[^1]: Let $(G, r)$ be an instance of The Firefighter Problem such that $G$ is a connected split graph on $n$ vertices and $m$ edges. This can be solved in time $O(n+m)$ time.
 
-Proof.
-Since $G$ is a split graph, $V(G)=I\cup U$ for an independent set $I$ and clique $K$ and we can find $I$ and $K$ in $O(n+m)$ time[^2].
+**Proof.**
+ - Since $G$ is a split graph, $V(G)=I\cup U$ for an independent set $I$ and clique $K$ and we can find $I$ and $K$ in $O(n+m)$ time[^2]. 
+ - Assume that every vertex of $C$ has a neighbour in $I$ (otherwise, remove each vertex of $C$ with no neighbours in $I$ and add it to $I$). 
+ - There are two cases to consider: $r\in K$ and $r\in I$.
+*Case 1: $r\in K$.*
+ - Consider any optimal strategy.
+ - If first defence in $I$, fire spreads to at least every other vertex of $K$.
+ - Next, can protect at most one more vertex of $I$ before fire spreads to all other vertices of $I$.
+ - Hence, we can save at most 2 vertices.
+ - Hence, if there is an optimal strategy that places first defence in $I$ then there is one that first protects a neighbour in $I$ of $r$ and then a vertex of $I\setminus N(R)$ if this set is non-empty.
+ - We can fin
 
 -----
  
