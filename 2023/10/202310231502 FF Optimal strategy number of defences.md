@@ -28,6 +28,14 @@ Adapted lemma for arbitrary cost function Firefighter (to keep as general as pos
 - As $S$ is optimal, there is an induced path on burning vertices between $r$ and a neighbour of $v_{t_h}$, the final vertex defended. Let $P$ be the shortest such path and let its length be $l$.
 - $P$ contains at least $d+1$ vertices, else $v_{t_h}$ would burn before it could be defended. Thus, $d\leq l-1$.
 
+1. Consider an optimal strategy $S$ in \CFire, where $S=((v_{1_1}, v_{1_2}, \dots), (v_{2_1}, \dots), \dots, (v_{t_1}, \dots, v_{t_h}))$ such that the number of vertices defended $d=|\bigcup_{s\in S}s|$ is maximal among optimal strategies of \CFire.
+3. Let $v_f\in \bigcup_{s\in S}s$ be a defended vertex of maximum distance from $r$.
+4. As $S$ is optimal, there is an induced path on burning vertices between $r$ and a neighbour of $v_{f}$.
+5. Let $P$ be the shortest such path, and let its length be $l$.
+6. If $P$ contains less than $bl+1$ vertices, then $v_{t_h}$ would burn before it could be defended.
+----------
+**C: Thus, $d\leq l-1$.**
+
 
 
 -----
