@@ -21,7 +21,7 @@ Status : #triage
 3. Let $v_t$ be a vertex of maximum distance in $G$ from $r$, which is defended at time $t$.
 4. Since the strategy is optimal, there exists an induced path $P$ between $r$ and $v_t$ such that all vertices on $P$ except $v_t$ burn.
 5. Let $P$ be a shortest path with this property.
-6. given [[certain lemma]] optimal strategy always defends beside fire
+6. given (certain restrictions and lemma) optimal strategy always defends beside fire
 7. If $P$ contains fewer than $|D|+1$ vertices,  $v_t$ would burn before it could be protected.
 **Conclusion:** $t\leq \ell - 1$.
 
