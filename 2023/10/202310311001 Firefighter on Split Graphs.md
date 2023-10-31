@@ -20,11 +20,27 @@ Theorem 8[^1]: Let $(G, r)$ be an instance of The Firefighter Problem such that 
  - There are two cases to consider: $r\in K$ and $r\in I$.
 *Case 1: $r\in K$.*
  - Consider any optimal strategy.
- - If first defence in $I$, fire spreads to at least every other vertex of $K$.
- - Next, can protect at most one more vertex of $I$ before fire spreads to all other vertices of $I$.
- - Hence, we can save at most 2 vertices.
- - Hence, if there is an optimal strategy that places first defence in $I$ then there is one that first protects a neighbour in $I$ of $r$ and then a vertex of $I\setminus N(R)$ if this set is non-empty.
- - We can fin
+ - If first defence is $v\in I$, 
+	 - Fire spreads to at least every other vertex of $K$.
+	 - Next, can protect at most one more vertex of $I$ before fire spreads to all other vertices of $I$.
+	 - Hence, we can save at most 2 vertices.
+	 - Hence, if there is an optimal strategy that places first defence in $I$ then there is one that first protects a neighbour in $I$ of $r$ and then a vertex of $I\setminus N(R)$ if this set is non-empty.
+	 - We can find such a strategy in $O(n+m)$ time.
+ - Else first defence is $v\in K$.
+	 - Fire spreads to at least every vertex of $K\setminus\{v\}$ 
+	 - If $v$ has neighbours of degree 1, these are saved by protecting $v$
+	 - Then, we can defend at most one more vertex $w\in I$ not adjacent to $r$ before fire spreads to all other vertices of $I$.
+	 - Thus, an optimal strategy with first defence in $K$:
+		 - First protects a vertex $v\neq r$ in $K$ with highest number of neighbours of degree 1
+		 - Then trues to defend a vertex $w\in I$ neither (a neighbour of $r$) nor (neighbour of $v$ and degree 1) if such a $w$ exists.
+	 - Vertices $v$ and $w$ (and hence such an optimal strategy) can be found in $O(n+m)$ time.
+
+Case 2: $r\in I$.
+ - If $\textrm{deg}(r)=1$, it is optimal to protect the single neighbour of $r$ in $K$, saving all vertices in $G\setminus\{r\}$
+ - Hence, assume $\textrm{deg}(r)\geq 2$.
+ - Note split graphs are $P_5$-free - then by [[202310231502 FF Optimal strategy number of defences|a previous lemma]], we can protect at most three vertices.
+ - Suppose there is an optimal strategu that defends only in $I$
+	 - Fire spreads from $r$ to every vertex of $n
 
 -----
  
