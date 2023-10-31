@@ -42,7 +42,22 @@ Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma f
 
 -----
 
-***Lemma 10:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Consider any strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t \geq 1$, let $u$ denote the leftmost burning vertex and let $v$ denote the rightmost burning vertex. Then every vertex $w$ with $r(u) < l(w) < r(w) < l(v)$ is either burning or protected. Moreover, any vertex that neighbours a burning vertex and that is neither burning nor protected at the start of time step $t$ is in $N(u) \cup N(v)$.*
+***Lemma 10:**[^1] Let $(G,s)$ be an instance of Firefighter Reserve Deployment such that $G$ is an interval graph. Consider any strategy for the Firefighting-with-Reserve game on $(G, s)$. At the start of time step $t \geq 1$, let $u$ denote the leftmost burning vertex and let $v$ denote the rightmost burning vertex. Then every vertex $w$ with $r(u) < l(w) < r(w) < l(v)$ is either burning or protected. Moreover, any vertex that neighbours a burning vertex and that is neither burning nor protected at the start of time step $t$ is in $N(u) \cup N(v)$.
+
+**Proof** (induction).
+1. The statement is true at time step $t = 1$, because $u = v = s$ so there is no vertex $w$ satisfying $r(s) < l(w) < r(w) < l(s)$. 
+2. Assume the statement is true at the start of time step $t − 1$: 
+	 - Let $u^\prime$ and $v^\prime$ denote the leftmost and rightmost vertices respectively that are burning at the start of time step $t − 1$
+	 - Let $u$ and $v$ denote the leftmost and rightmost vertices respectively that are burning at the start of time step $t$. 
+3. By the induction hypothesis, all vertices that start burning in time step $t − 1$ neighbour $u^\prime$ or $v^\prime$ hence:
+	- $u$ is the leftmost unprotected neighbour of $u^\prime$ (else $u = u^\prime$)
+	- $v$ is the rightmost unprotected neighbour of $v^\prime$ (else $v = v^\prime$)
+4. Note that any vertex $w$ that satisfies $r(u) < l(w) < r(w) < l(v)$ also satisfies 
+	$(r(u^\prime) < l(w) < r(w) < l(v^\prime))$ or $((u) < l(w) < r(u′))$ or $(l(v′)<r(w)<l(v))$
+5. In the first case, by induction $w$ is still either burning or protected at the start of time step$ t$.
+6. In the second and third cases, since $u$ is a neighbour of $u^\prime$ (or $u=u^\prime$) and $v$ is a neighbour of $v′$ (or $v=v^\prime$), $w$ is a neighbour of $u^\prime$ or of $v^\prime$ respectively, thus $w$ is burning or protected at the start of time step $t$. 
+7. Therefore, any vertex $x$ that neighbours a burning vertex and that is neither burning nor protected at time step $t$ satisfies $l(x) < r(u)$ or $l(v) < r(x)$. 
+**C:** Since $u$ and $v$ are the leftmost and rightmost vertex respectively that burns at time step $t$, $x$ neighbours $u$ or $v$.
 
 -----
 
@@ -61,11 +76,11 @@ Conclusion: As $N(R)=\bigcup_{i=1}^pN(R_i)=\bigcup_{i\in I}N(R_i)$, the lemma f
 4. Consider any ordering $v_1,\dots,v_k^\prime$ of the vertices in $F_1,...,F_k$ such that $v_a \in F_i, v_b \in F_j$ for $i< j$ implies $a<b$. 
 **C1:** Because $F_1,\dots,F_k$ is a valid strategy, this ordering is also a valid strategy. 
 **C2:** this new strategy saves exactly the same set of vertices.  
-**C:** Firefighter and Firefighter-Reserve-Deployment are equivalent problems.
+**C:** Firefighter and Firefighter-Reserve-Deployment are equivalent problems. $\blacksquare$
 
 Consider the two transformations in the above proof. If we apply the second transformation on a strategy for the Firefighting-with-Reserve game, and then the first, we obtain a strategy for the Firefighting-with-Reserve game with the following property.
 
-***(Earlier) Corollary 3:**[^1] Let $(G, s)$ be an instance of Firefighter Reserve Deployment. There exists an optimal strategy for the Firefighting-with- Reserve game on $(G , s)$ that only protects vertices that neighbour a vertex that is on fire.*
+***(Earlier) Corollary 3 (of Lemma 2):**[^1] Let $(G, s)$ be an instance of Firefighter Reserve Deployment. There exists an optimal strategy for the Firefighting-with- Reserve game on $(G , s)$ that only protects vertices that neighbour a vertex that is on fire.*
 
 -----
 
@@ -108,9 +123,7 @@ where the meaning of $s_r^\prime$ and $u_r^\prime$ is the same as before.
  - We now compute $p^∗=A(s,s,u_l,u_r,1)$, where $u_l$ is the leftmost neighbour of $s$ and $u_r$ is the rightmost neighbour of $s$. Then there is a strategy that saves $p^∗$ vertices of $G$.
 
  - The correctness of the algorithm follows from Lemma 9 and Corollary 12. 
- - Since the table $A$ has five indices that each take at most $n$ different values and since an entry of $A$ is a maximum over at most two numbers that each take at most $n$ different values, the algorithm takes $O(n7)$ time.
-
-
+ - Since the table $A$ has five indices that each take at most $n$ different values and since an entry of $A$ is a maximum over at most two numbers that each take at most $n$ different values, the algorithm takes $O(n7)$ time. $\blacksquare$
 
 -----
  
