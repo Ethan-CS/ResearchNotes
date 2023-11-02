@@ -22,7 +22,7 @@ As given in:[^1] in the Firefighter-with-Reserve game on a rooted graph $(G, r)$
 
 **Proof.** 
  1. Consider a strategy $v_1,\dots,v_k$ for the Firefighting game.
- 2. At time step t, if the fire reaches vertices $F_t \subseteq \{v_1,\dots,v_k\}$ at time step $t +1$ in $G-\bigcup_{i=1}^{t−1}F_i$, deploy the firefighters in $F_t$ at time $t$. 
+ 2. At time step t, if the fire reaches vertices $F_t \subseteq \{v_1,\dots,v_k\}$ at time step $t +1$ in $G\setminus\bigcup_{i=1}^{t−1}F_i$, deploy the firefighters in $F_t$ at time $t$. 
 **C1:** Because $v_1,\dots,v_k$ is a valid strategy, this must also be a valid strategy that saves exactly the same set of vertices. 
 3. Consider a strategy $F_1,\dots,F_k$ for the Firefighting-with-Reserve game. 
 4. Consider any ordering $v_1,\dots,v_k^\prime$ of the vertices in $F_1,...,F_k$ such that $v_a \in F_i, v_b \in F_j$ for $i< j$ implies $a<b$. 
