@@ -6,7 +6,7 @@ Status : #triage
 
 # Instant Insanity (Favourite Reduction Session)
 
-**Previous note:** [[202311061145 CFF and CFF-Res equivalent]]
+**Previous note:** [[202311020956 FF and FF-Reserve Equivalent]]
 
 -----
 
