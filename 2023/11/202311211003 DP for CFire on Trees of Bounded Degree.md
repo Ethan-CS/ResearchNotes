@@ -26,7 +26,9 @@ Find a strategy to defend certain vertices in a tree (to minimise total cost and
 $$f(v, i, d)=\min_{u \in N(v)}\{f(u, i-1, d^\prime)+c(v) \mid d^\prime \leq d-1\}$$
 where $d^\prime$ is the number of vertices defended in the neighbours of $v$ at time $i-1$.
 3. **Base case:** when $i=0$, which we take to be before fire breaks out at the root $r$, in which case the cost is zero.
-4. **Goal:** find the minimum cost to defend at least $k$ vertices by the end of the process at time $T$. This can be found by iterating over all vertices $v$ and $d$ at time $T$ and selecting the minimium cost such that 
+4. **Goal:** find the minimum cost to defend at least $k$ vertices by the end of the process at time $T$. This can be found by iterating over all vertices $v$ and $d$ at time $T$ and selecting the minimum cost such that $d\geq k$.
+
+Time complexity: let $a$ be the average degree of $T$, then the dynamic program is computable in $O(n\cdot T\cdot k\cdot a +n\cdot T \cdot(k+1))=O(a\cdot k\cdot n\cdot T)$ time. $T$ and $a$ are bounded above by $n$, so this becomes $O(kn^3)$ in the worst case.
 
 
 
