@@ -34,7 +34,7 @@ Output: The minimum number of saved vertices in $T$ with budget at most $b$ and 
 1. Initialise $f(v, b)=\infty$ for all vertices $v\in V(T)$ and budgets $b$.
 2. For each leaf vertex $v$, set $f(v, c(v))=1$ if $c(v) \leq b$ and 0 otherwise.
 3. For each non-leaf vertex $v$, compute $f(v, b)$ using the recurrence $f(v, b) = \displaystyle\min_{u\in V(T[v])}\{f(u, b - c(v)) + 1\} \textrm{ if } b \geq c(v)$
-6. Compute the minimum number of saved vertices at the root $r$ with budget at most $b$ and at least $k$ as $\min\{f(r, b) \mid f(r, b) \geq k\}$
+4. Compute the minimum number of saved vertices at the root $r$ with budget at most $b$ and at least $k$ as $\min\{f(r, b) \mid f(r, b) \geq k\}$
 
 -----
  
