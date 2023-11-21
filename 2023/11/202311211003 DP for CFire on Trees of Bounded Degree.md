@@ -14,8 +14,8 @@ Status : #triage
 ### Questions & thoughts:
 
 1. **Initialisation:**
-    - Initialise DP table to store minimum costs and strategy table to track defense strategies.
-    - Set initial costs in the DP table to infinity and initialize strategies as empty lists.
+    - Initialise DP table to store minimum costs and strategy table to track defence strategies.
+    - Set initial costs in the DP table to infinity and initialise strategies as empty lists.
 2. **Base Case:**
     - Set the base case for the root vertex, where defending zero vertices incurs zero cost.
     - Initialise the strategy for the root vertex as an empty list.
@@ -30,6 +30,8 @@ Status : #triage
     - Check if the minimum cost is within the given budget.
         - If yes, return the defence strategy.
         - If no, return an empty list.
+
+
 
 
 -----
