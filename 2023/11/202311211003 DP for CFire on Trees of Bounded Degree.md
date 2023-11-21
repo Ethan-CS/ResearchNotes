@@ -13,23 +13,26 @@ Status : #triage
 
 ### Questions & thoughts:
 
-  
-ChatGPT
-
-Find a strategy to defend certain vertices in a tree (to minimise total cost and) ensure that a minimum number of vertices are saved when a fire breaks out.
-
-1. **State:** the state is represented as a tuple $(v, i, d)$ where:
-	 - $v$ is the current vertex
-	 - $i$ is the timestep, and
-	 - $d$ is the number of vertices defended so far.
- 2. **Recursive function:** Let $f(v, i, d)$ be the minimum cost to defend $d$ vertices up to time $i$ starting from vertex $v$. The function can be defined as follows:
-$$f(v, i, d)=\min_{u \in N(v)}\{f(u, i-1, d^\prime)+c(v) \mid d^\prime \leq d-1\}$$
-where $d^\prime$ is the number of vertices defended in the neighbours of $v$ at time $i-1$.
-3. **Base case:** when $i=0$, which we take to be before fire breaks out at the root $r$, in which case the cost is zero.
-4. **Goal:** find the minimum cost to defend at least $k$ vertices by the end of the process at time $T$. This can be found by iterating over all vertices $v$ and $d$ at time $T$ and selecting the minimum cost such that $d\geq k$.
-
-Time complexity: let $a$ be the average degree of $T$, then the dynamic program is computable in $O(n\cdot T\cdot k\cdot a +n\cdot T \cdot(k+1))=O(a\cdot k\cdot n\cdot T)$ time. $T$ and $a$ are bounded above by $n$, so this becomes $O(kn^3)$ in the worst case.
-
+1. **Initialisation:**
+    - Initialise DP table to store minimum costs and strategy table to track defense strategies.
+    - Set initial costs in the DP table to infinity and initialize strategies as empty lists.
+2. **Base Case:**
+    - Set the base case for the root vertex, where defending zero vertices incurs zero cost.
+    - Initialize the strategy for the root vertex as an empty list.
+3. **Recursive DP:**
+    
+    - For each defense level, each vertex, and each neighboring vertex:
+        - Calculate the cost of defending the current vertex considering the strategy from the neighboring vertex.
+        - Update DP table and strategy table if the new cost is smaller than the existing cost.
+4. **Minimum Cost Retrieval:**
+    
+    - Find the minimum cost among all non-root vertices and defense levels.
+    - Retrieve the defense strategy associated with the minimum cost.
+5. **Budget Check:**
+    
+    - Check if the minimum cost is within the given budget.
+        - If yes, return the defense strategy.
+        - If no, return an empty list.
 
 
 -----
