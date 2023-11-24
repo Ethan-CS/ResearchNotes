@@ -14,9 +14,9 @@ Status : #triage
 
 From paper:[^1]
 
-A proper subset $S \subset V$ is a separator of $G$ if$ G − S$is disconnected.
+A proper subset $S \subset V$ is a separator of $G$ if $G − S=G[V(G)\subseteq S]$ is disconnected.
 
-DEFINITION 8. A vertex set S ⊂ V is an a,b-separator of G if the removal of S separates a and b in distinct connected components of G − S. If no proper subset of an a,b-separator S is an a,b-separator, then S is a minimal a,b-separator. A vertex set S ⊂ V is a minimal separator of G if there exist nonadjacent vertices a and b in G such that S is a minimal a,b-separator of G.
+**Definition 8**. A vertex set $S\subset V$ is an $(a,b)$-separator of $G$ if the removal of $S$ separates $a$ and $b$ in distinct connected components of $G − S$. If no proper subset of an $(a,b)$-separator $S$ is an $(a,b)$-separator, then $S$ is a minimal $(a,b)$-separator. A vertex set $S \subset V$ is a minimal separator of $G$ if there exist nonadjacent vertices $a$ and $b$ in $G$ such that $S$ is a minimal $(a,b)$-separator of $G$.
 
 **Definition 18.** A set $\mathfrak{S}$ of minimal separators of $G$ is a *blocking set* if the elements of $\mathfrak{S}$ are incomparable with respect to set inclusion and for all $S \in \mathfrak{S}$ the vertex set $(\bigcup \mathfrak{S})\setminus S$ is contained in one connected component of $G − S$.
 
