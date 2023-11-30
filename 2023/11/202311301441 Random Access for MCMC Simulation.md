@@ -4,9 +4,9 @@ Status : #triage
 
 -----
 
-# Title
+# Random Access fro MCMC Simulation
 
-**Previous note:** [[]]
+**Previous note:** [[202311291140 FF and STD Network Models]]
 
 -----
 
@@ -17,10 +17,3 @@ From another talk at Epidemics - look at how random numbers are generated in ODE
 
 -----
  
-**Consider:**
-
-
-**Source:** 
-
-
-**Reference:** 
