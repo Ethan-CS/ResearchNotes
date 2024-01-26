@@ -16,7 +16,7 @@ Consider the $2P2N$-SAT problem, a variant of 3-SAT for which in a formula $\phi
 
 Instance of 2-2-SAT: variables $x_1, \dots, x_n$ and clauses $C_1, \dots, C_m$ in 3CNF composing a formula $\phi$. Question: is there a satisfying assignment of variables such that $\phi$ evaluates to true?
 
-Construct a graph $G$ as follows. Starting from a single vertex (the root) labelled $r$, create 
+Construct a graph $G$ as follows. Starting from a single vertex (the root) labelled $r$, create $2n$ paths from $r$, each of length $n+2m$. Label the vertex of degree 1 of each path with the following literals: $v_1^+,v_2^+,\dots,v_n^+,v_1^-,\dots,v_n^-$. Then, for each 
 
 
 -----
