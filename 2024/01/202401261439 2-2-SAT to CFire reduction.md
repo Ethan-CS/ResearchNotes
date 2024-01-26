@@ -12,6 +12,8 @@ Status : #triage
 
 ### Questions & thoughts:
 
+Consider the $mPnN$-SAT problem, a variant of 3-SAT for which in a formula $\phi$, every variable $x_i$ for $1\leq i \leq n, n\in \mathbb{N}$ occurs $m$ times as a positive literal and $n$ times as a negative literal. This is NP-complete for $m>1$ and $n>2$. 
+
 
 Instance of 2-2-SAT
 
