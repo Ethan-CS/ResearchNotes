@@ -13,7 +13,8 @@ Status : #triage
 ### Questions & thoughts:
 
 ![feedback-01](img/feedback_01.jpg)
-![feedback-02](img/dfe)
+![feedback-02](img/feedback_02.jpg)
+
 
 
 
