@@ -23,7 +23,11 @@ The spreading problem is more tractable than the vanilla problem (section 3).[^1
 | Max-save | $(1-1/e)$ approx. | $n^{(1-\epsilon)}$-hard for $\epsilon>0$ |
 | Min-budget | $\ln n$ approx and $(1-o(1))\ln n$-hard | General: $2\sqrt{n}$-approx, directed $\ell$-layered graph: $H(\ell)$-approx |
   
-Lemma 3.1: I think this is basically the same as result in most recent paper (length of time the process can run is bou)
+Lemma 3.1: I think this is basically the same as result in most recent paper (length of time the process can run is bounded above by the length of the longest path).
+
+Theorem 3.6: Min-budget spreading vaccination problem is as hard as set cover (corollary: there is no $(1-o(1))\ln n$-approximation for the min-budget spreading problem unless $NP\subseteq DTIME(n^{\texttt{poly}\log(n)})$. 
+
+Theorem 3.9: There is a poly-time $\ln(n)$-factor approximation algorithm for the min-budget spreading problem.
 
 
 
