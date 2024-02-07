@@ -21,9 +21,9 @@ The spreading problem is more tractable than the vanilla problem (section 3).[^1
 |  | Spreading | Non-spreading |
 | ---- | ---- | ---- |
 | Max-save | $(1-1/e)$ approx. | $n^{(1-\epsilon)}$-hard for $\epsilon>0$ |
-| Min-budget | $\ln n$ approx and  |  |
+| Min-budget | $\ln n$ approx and $(1-o(1))\ln n$-hard | General: $2\sqrt{n}$-approx, directed $\ell$-layered graph: $H(\ell)$-approx |
   
-
+Lemma 3.1: I think this is basically the same as result in most recent paper (length of time the process can run is bou)
 
 
 
