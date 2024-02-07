@@ -18,6 +18,15 @@ Traditional fire: rooted graph $(G, r)$, fire starts at $r$ and at each subseque
 
 The spreading problem is more tractable than the vanilla problem (section 3).[^1]
 
+|  | Spreading | Non-spreading |
+| ---- | ---- | ---- |
+| Max-save | $(1-1/e)$ approx. | $n^{(1-\epsilon)}$-hard for $\epsilon>0$ |
+| Min-budget | $\ln n$ approx and  |  |
+  
+
+
+
+
 
 
 -----
