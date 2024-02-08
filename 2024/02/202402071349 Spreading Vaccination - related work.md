@@ -12,11 +12,11 @@ Status : #triage
 
 ### Questions & thoughts:
 
-Jess and I originally thought there was nothing on the infectious vaccination problem. I've found two papers[^1],[^2] that mention the 'spreading' firefighter problem in the last few days. I summarise the problems in[^1] () and results as follows.
+Jess and I originally thought there was nothing on the infectious vaccination problem. I've found two papers[^1],[^2] that mention the 'spreading' firefighter problem in the last few days. I summarise the problems in[^1] (as the other only gives minor extensions) and results as follows.
 
-Traditional fire: rooted graph $(G, r)$, fire starts at $r$ and at each subsequent time-step: we defend up to $b$ vertices, then the fire spreads to any undefended and unburned vertices. This continues until fire can no longer spread. Spreading model: defence (referred to by both sources as vaccination) spreads in the same way as fire (to all undefended and unburned neighbours). They[^1] do not make it clear which spreads first, fire or vaccination. The authors[^1] consider both a minimum-budget-used objective and a maximum-number-saved objective at different times for the vanilla and spreading problems.
+Traditional fire: rooted graph $(G, r)$, fire starts at $r$ and at each subsequent time-step: we defend up to $b$ vertices, then the fire spreads to any undefended and unburned vertices. This continues until fire can no longer spread. Spreading model: defence (referred to by both sources as vaccination) spreads in the same way as fire (to all undefended and unburned neighbours). The authors do not make it clear which spreads first, fire or vaccination. The authors consider both a minimum-budget-used objective and a maximum-number-saved objective at different times for the vanilla and spreading problems.
 
-The spreading problem is more tractable than the vanilla problem (section 3).[^1]
+The spreading problem is more tractable than the vanilla problem (section 3).
 
 |  | Spreading | Non-spreading |
 | ---- | ---- | ---- |
@@ -30,9 +30,6 @@ Theorem 3.6: Min-budget spreading vaccination problem is as hard as set cover (c
 Theorem 3.9: There is a poly-time $\ln(n)$-factor approximation algorithm for the min-budget spreading problem.
 
 In their conclusion,[^1] these authors note that they studied vaccination spreading to all undefended and unburned neighbours and non-spreading, but the rate of vaccination spread for any actual modelling application is almost certainly between these two. They suggest studying this as a different problem. They also suggest studying a more complex compartmental-type process where individuals can go from incubation to symptomatic (with a small stochastic delay) before contagious for the purpose of spreading infection. Could also consider adding probability of transmission to edges or probabilities on vertices giving their susceptibility.
-
-
-
 
 -----
  
