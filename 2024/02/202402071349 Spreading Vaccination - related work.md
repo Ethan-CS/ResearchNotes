@@ -29,7 +29,7 @@ Theorem 3.6: Min-budget spreading vaccination problem is as hard as set cover (c
 
 Theorem 3.9: There is a poly-time $\ln(n)$-factor approximation algorithm for the min-budget spreading problem.
 
-In their conclusion,[^1] these authors note that they studied vaccination spreading to all undefended and unburned neighbours and non-spreading, but the rate of vaccination spread for any actual modelling application is almost certainly between these two. They suggest studying this as a different problem. They also suggest studying a more complex compartmental-type 
+In their conclusion,[^1] these authors note that they studied vaccination spreading to all undefended and unburned neighbours and non-spreading, but the rate of vaccination spread for any actual modelling application is almost certainly between these two. They suggest studying this as a different problem. They also suggest studying a more complex compartmental-type process where individuals can go from incubation to symptomatic (with a small stochastic delay) before contagious for the purpose of spreading infection. Could also consider adding probability of transmission to edges or probabilities on vertices giving their susceptibility.
 
 
 
