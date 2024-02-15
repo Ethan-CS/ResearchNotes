@@ -4,7 +4,7 @@ Status : #triage
 
 -----
 
-# Infectious vaccination on interval graphs
+# Infectious vaccination on interval graphs - one-sided
 
 **Previous note:** [[202402081136 Open problems in spreading Firefighter problem]]
 
