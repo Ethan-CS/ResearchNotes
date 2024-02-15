@@ -31,14 +31,8 @@ Theorem 3.9: There is a poly-time $\ln(n)$-factor approximation algorithm for th
 
 -----
  
-**Consider:**
-
-
 **Source:** 
 [1]: Anshelevich, E., Chakrabarty, D., Hate, A., Swamy, C. (2009). Approximation Algorithms for the Firefighter Problem: Cuts over Time and Submodularity. In: Dong, Y., Du, DZ., Ibarra, O. (eds) Algorithms and Computation. ISAAC 2009. Lecture Notes in Computer Science, vol 5878. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-10631-6_98
 
 [2]: P Floderus, A Lingas, M Persson, *Towards more efficient infection and fire fighting,* Proceedings of the Seventeenth Computing: The Australasian Theory Symposium (CATS 2011), Perth, Australia
 
-
-
-**Reference:** 

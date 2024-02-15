@@ -18,10 +18,3 @@ They also suggest studying a more complex compartmental-type process where indiv
 
 -----
  
-**Consider:**
-
-
-**Source:** 
-
-
-**Reference:** 
