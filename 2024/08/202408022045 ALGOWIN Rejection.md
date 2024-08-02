@@ -26,17 +26,20 @@ SCORE: -2 (reject)
 The paper introduces a new variation CFIRE of the firefighter problem where the cost of defending a vertex can depend on the vertex, the time step, and the current state of the graph (i.e. which vertices are burning, defended, or open). There is a budget b that can be spent on defending vertices in each step, and the question is to decide whether k vertices can be saved.  
   
 The paper presents a number of results that are obtained largely by fairly straightforward adaptations of known results for the standard fire fighter problem or its budgeted variant. The biggest problem of the paper is that it is poorly written: Notation is used inconsistently, some proofs are not correct as stated, some claims are wrong. In its present form, the paper is not suitable for publication in my opinion. If the paper was very well written and all the proofs were convincing, I would have rated it as borderline.  
-  
-Detailed comments (you didn't include line numbers in your submission, so I will specify only the pages my comments refer to and leave it to you to search for the line my comments refer to):  
+
+...
   
 page 2: The paragraph starting with "In a game of CFIRE" describes b-FIRE, not CFIRE.  
 
 *This is because that sentence is trying to motivate discussion of b-Fire, but doesn't achieve that clearly.*
   
 page 3, Definition 2: The definition of the mapping S_{I,sigma} only allows tuples in which all vertices are paired with the same value x; this is not what you want, you need to allow each vertex to be paired with an arbitrary value in {burning,defended,open}, independent of the other vertices. Also, it is ambiguous whether the function S_{I,sigma}(i) returns the state before or after the verties in sigma_i have been defended in step i.  
+
 *First fix - to check.*
   
 The cost function c is introduced as a function with three arguments (a vertex, a time step, and a state), but often used with other arguments (e.g. c(v) or c(v,state)). It would be better to explicitly say that you write static cost functions as c(v), state-dependent ones as c(v,state), etc.  
+
+
   
 The function S_{I,sigma} is introduced as a mapping from time steps to states in Definition 2, but then the rest of the paper uses a function S (that hasn't been defined but is presumably meant to be S_{I,sigma}) with many different types of arguments:  
 - In the definition of CFIRE on page 4 you use S(i,sigma{i-1}), a function that depends on the time step i and the vertices defended in step i-1: What you need is the state of the network a time i (which could be obtained by S_{I,sigma}(i) or S_{I,sigma}(i-1) depending on the definition.  
