@@ -134,6 +134,8 @@ to practice.
 The authors do present a motivation in the form of cost functions which model  
 human behaviour in an epidemic, but they do not seem reasonable to me and are  
 not based in any knowledge of the real world.  
+
+***Idea for motivation: game balancing. Run lots of simulations, e.g. varying density ER graphs, for Fire and then CFire, show how much more often CFire can be solved and that can be won on more dense graphs for a "good" (read: interesting) choice of cost function and budget, so CFire becomes a more "fun" game to play (even if it is shit as an epidemic model, like Fire).***
   
 As to the paper and its results, I find that they are not particularly deep,  
 mostly adopting techniques of other papers to this setting.  
@@ -270,13 +272,19 @@ feedback.
  + The same applies to theorems such as Theorem 4:  
    "Consider a PathContainable instance for CFire, composed of a rooted tree..."  
    "Then, its cost function assigns..."  
+
+*Working on this as I go through.*
   
 - Please use \emph in definitions to introduce new terms.  
+
+*Working on this as go through.*
   
 - You use the variable T in at least 3 different ways: as a tree, as an  
  interval in Def. 2, and as a time step later on. Please avoid this mixing.  
  + In Definition 2, T seems unnecessary, as you could use [0, |sigma|] directly  
  (and define it in the prelims to mean just the integers).   
+
+ *Absolutely right should change.*
   
 - In Def. 2, you could define Fraktur S as the current co-domain of the  
  functions S_{I, sigma}, and define those as going to Fraktur S. So,  
