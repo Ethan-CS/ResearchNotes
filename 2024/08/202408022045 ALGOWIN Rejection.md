@@ -248,10 +248,14 @@ feedback.
  so the reader can immediately see a collection of the results proved in your  
  paper (and can judge, just from the Introduction, if they want to read the  
  technical content).  
+
+*Tried to do this, not sure I have characterised all results correctly or even ordered in a coherent way, will catch on first pass after amendments.*
   
 - I find it much easier to navigate a paper when counters for statements (theorems, lemma, etc) are:  
  + unified (no Theorem 1 and Lemma 1, rather each number is only assigned to a single statement)  
  + separated by section (so the first statement in Section 3 is Theorem/Lemma/... 3.1)  
+
+*Unfortunately this is formatted as publisher required, don't think I was allowed to change.*
   
 - Whenever possible, make an effort to separate the preconditions and inputs  
  from the statement of the lemma/theorem, or the definition.   
