@@ -227,16 +227,22 @@ feedback.
  Instead, either tack them at an appropriate point of the sentence without  
  referring to them (e.g."the problem is known to be NP-hard [X]"), or name  
  the authors ("Y et al. prove that the problem is NP-hard [X]")  
-  
+
+*Will need to change this as I go through.*
+
 - In page 1-2, the whole paragraph starting with "We first give graph  
  theoretic", as well as the formal definition of the problem (in the box)  
  should be moved to a Preliminaries section.  
  + In fact, most things in the paragraph could be omitted, since they are  
    standard graph notation.  
+
+*Mileage may vary? Had exact opposite advice from previous review*
   
 - I would like to see a much more expanded section on related work. FF and  
  related problems have a vast collection of works, including minimization and  
  maximization versions, approximation, etc.  
+
+*Working on this.*
   
 - I recommend including formal theorems in the Contributions section (Sec 1.1)  
  so the reader can immediately see a collection of the results proved in your  
