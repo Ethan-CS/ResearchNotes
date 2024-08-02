@@ -205,14 +205,23 @@ particular the paper should be more structured, with different types of content
 (motivation, related work, own contributions, techniques) separated into  
 logical sections; the paper should also try to be as clear as possible to the  
 reader.  
+
+*Introduced these sections.*
+
 I recommend seeking the help of an experienced researcher to get further  
 feedback.  
+
+*Agree - I need help, don't want to ask as so embarrassed about these comments, need to try and work diligently by myself first.*
   
 - In the abstract, start by presenting the firefighter problem, as it is not  
  clear that the reader knows it.  
+
+*First pass done.*
   
 - Also in the abstract, it is common to separate the results into a different  
  paragraph.  
+
+*Also first pass done.*
   
 - Please avoid using references as grammatical objects ("in [X]").  
  Instead, either tack them at an appropriate point of the sentence without  
