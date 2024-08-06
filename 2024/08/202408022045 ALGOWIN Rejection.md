@@ -39,7 +39,7 @@ page 3, Definition 2: The definition of the mapping S_{I,sigma} only allows tupl
   
 The cost function c is introduced as a function with three arguments (a vertex, a time step, and a state), but often used with other arguments (e.g. c(v) or c(v,state)). It would be better to explicitly say that you write static cost functions as c(v), state-dependent ones as c(v,state), etc.  
 
-
+*Added sentence explaining number of variables can change based on e.g. static has one, temporal has at least two.*
   
 The function S_{I,sigma} is introduced as a mapping from time steps to states in Definition 2, but then the rest of the paper uses a function S (that hasn't been defined but is presumably meant to be S_{I,sigma}) with many different types of arguments:  
 - In the definition of CFIRE on page 4 you use S(i,sigma{i-1}), a function that depends on the time step i and the vertices defended in step i-1: What you need is the state of the network a time i (which could be obtained by S_{I,sigma}(i) or S_{I,sigma}(i-1) depending on the definition.  
