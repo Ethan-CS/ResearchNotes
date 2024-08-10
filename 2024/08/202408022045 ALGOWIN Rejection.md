@@ -12,7 +12,7 @@ Status : #triage
 
 ### Questions & thoughts:
 
-(My notes in *italics*)
+(My notes and responses in *italics*)
 
 #### Review 1
 
