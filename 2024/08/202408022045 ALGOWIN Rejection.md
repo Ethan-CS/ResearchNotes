@@ -400,7 +400,7 @@ AUTHORS: Ethan Hunter and Jessica Enright
 ----------- Overall evaluation -----------  
 SCORE: 0 (borderline paper)  
 ----- TEXT:  
-The authors study a variant of the Firefighter problem. In simple terms, the Firefighter setting consists of a graph, where at some arbitrary time, a set of the vertices start ``burning''. In every round, the fire spreads from a burning vertex to adjacent ``safe'' vertices. This process continues until every vertex is burned. The ``Firefighters'' are able to defend vertices, such that the fire is not spread to them. In practice, this setting models a spreading process among vertices, where we can protect some vertices to stop the infection. The question asked is, which vertices should we defend in order to maximize the vertices that get saved. The novelty of this paper is that it considers different functions that assign costs to defend the vertices. The functions that they consider depend on any combination of the following factors: the vertex considered, the state of the graph, the round of the process.  
+The authors study a variant of the Firefighter problem. In simple terms, the Firefighter setting consists of a graph, where at some arbitrary time, a set of the vertices start "burning." In every round, the fire spreads from a burning vertex to adjacent "safe" vertices. This process continues until every vertex is burned. The "Firefighters" are able to defend vertices, such that the fire is not spread to them. In practice, this setting models a spreading process among vertices, where we can protect some vertices to stop the infection. The question asked is, which vertices should we defend in order to maximize the vertices that get saved. The novelty of this paper is that it considers different functions that assign costs to defend the vertices. The functions that they consider depend on any combination of the following factors: the vertex considered, the state of the graph, the round of the process.  
   
 The main results are:  
 -The problem is NP-hard for cost functions that depend on time even on very restricted rooted tree graphs.  
@@ -413,7 +413,10 @@ Negatives:
 -Not well written  
   
 Opinion of the reviewer:  
--I think that the problem studied by the authors is quite interesting and the results are a bit involved. I like the problem setting and it is worthwhile to study what happens when there are different functions costs that capture different scenarios. I think that the complexity of the results is not very high but it is also not very straightforward. I had already reviewed the paper for another conference and my main complaint was that the paper was not well written. Since then, the authors have implemented many changes that makes the paper more rigorous and easier to read but there are still a lot of things that are ill-defined and are left unclear to the reader which makes the paper difficult to read. If the paper was well written, I would lean towards accept but in its current form, I think it is at best, a borderline paper.
+-I think that the problem studied by the authors is quite interesting and the results are a bit involved. 
+I like the problem setting and it is worthwhile to study what happens when there are different functions costs that capture different scenarios. 
+
+I think that the complexity of the results is not very high but it is also not very straightforward. I had already reviewed the paper for another conference and my main complaint was that the paper was not well written. Since then, the authors have implemented many changes that makes the paper more rigorous and easier to read but there are still a lot of things that are ill-defined and are left unclear to the reader which makes the paper difficult to read. If the paper was well written, I would lean towards accept but in its current form, I think it is at best, a borderline paper.
 
 
 -----
