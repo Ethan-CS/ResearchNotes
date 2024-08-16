@@ -415,7 +415,6 @@ Negatives:
 Opinion of the reviewer:  
 -I think that the problem studied by the authors is quite interesting and the results are a bit involved. 
 I like the problem setting and it is worthwhile to study what happens when there are different functions costs that capture different scenarios. 
-
 I think that the complexity of the results is not very high but it is also not very straightforward. I had already reviewed the paper for another conference and my main complaint was that the paper was not well written. Since then, the authors have implemented many changes that makes the paper more rigorous and easier to read but there are still a lot of things that are ill-defined and are left unclear to the reader which makes the paper difficult to read. If the paper was well written, I would lean towards accept but in its current form, I think it is at best, a borderline paper.
 
 
