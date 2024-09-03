@@ -49,6 +49,7 @@ page 6, first paragraph: you claim that assigning burning to all the open neighb
   
 page 6-7: The proof of Theorem 2 has many issues:  
 You label the terminal vertices v_i+ for i=1..n and v_i- for i=n+1..2n, but later you assume that for i=1..n you have v_i+ and v_i-. To achieve this, you would need to label the terminal vertex of P_i for i=n+1..2n with v_{i-n}-, not with v_i-.  
+*This is correct - fixed.*
 You write that C_i and C_{i-1} have cost 1 at time i for i=n+1..2n. This would indicate that we have vertices C_i for i=n..2n. However, we have m=4n/3 clauses numbered from C_1 to C_m, which doesn't match the clauses referred to here. Besides, to make the proof work, I think you need that the vertices of clause i can be defended in 2 consecutive time steps, so to make the proof work you should probably specify that the three vertices corresponding to C_i are active in step n+2i-1 and n+2i, or something like this.  
 You claim "we save a further m vertices", but the n literals defended in steps 1..n always save a further 2n vertices (as each such literal saves its two children).  
 "restricts us to defending at mos ttwo of the three associated vertices": associate to what?  
