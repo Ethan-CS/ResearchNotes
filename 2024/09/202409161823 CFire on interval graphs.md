@@ -26,6 +26,7 @@ Status : #triage
 	 - Recurrence: $$DP[i][\sigma][t+1]=\begin{cases}DP[i-1][\sigma][t] &\textrm{don't defend }i\\\max(DP[i-1][\sigma^\prime][t], DP[j][\sigma^\prime][t]+(i-j))&\textrm{defend } i\end{cases}$$ where $j$ is the rightmost interval to left of leftmost interval of $i$
 	 - Base case is set as $DP[i][0]=0$ and $DP[0][t]=0$ for all $i$ and $t$ respectively 
 	 - We look at $DP[n][T]$ to find the max number of vertices we can save by considering all $n$ intervals and entire budget $b$
+ - This takes time $O(n\times n \times T)=O(Tn^2)$-time 
  - By sorting intervals, we process intervals in order fire would spread
  - At each time $i$, do or don't defend each interval and see what happens.
 
