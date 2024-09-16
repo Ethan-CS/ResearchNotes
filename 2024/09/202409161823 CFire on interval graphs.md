@@ -21,7 +21,9 @@ Status : #triage
  - Let $G=(V, E)$ be an interval graph with $n$ vertices and $b$ be per-turn budget
  - Obtain the interval representation $I$ of $G$ (in $O(n)$-time) and sort them with respect to their right endpoints (in O(n ln(n))-time using e.g. comparison sort).
  - Dynamic programming:
-	 - Create a table $DP$ in which each $DP[i][t]$ for intervals up to $i$ at time $t$ representing max number of vertices that can be saved.
+	 - Create a table $DP$ in which each $DP[i][t]$ for interval $i$ at time $t$ representing max number of vertices that can be saved.
+	 - Fill bottom-up, from rightmost right endpoint to leftmost.
+	 - Recurrence: $$DP[][]$$
 
 
 
