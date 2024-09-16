@@ -23,7 +23,7 @@ Status : #triage
  - Dynamic programming:
 	 - Create a table $DP$ in which each $DP[i][t]$ for interval $i$ at time $t$ representing max number of vertices that can be saved.
 	 - Fill bottom-up, from rightmost right endpoint to leftmost.
-	 - Recurrence: $$DP[][]$$
+	 - Recurrence: $$DP[i][t]=\begin{cases}DP[i-1][t] &\textrm{don't defend }i\\\max(DP[][], DP[][]+(i-j))&\textrm{defend } i \end{cases}$$
 
 
 
