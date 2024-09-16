@@ -24,7 +24,8 @@ Status : #triage
 	 - Create a table $DP$ in which each $DP[i][t]$ for interval $i$ at time $t$ representing max number of vertices that can be saved.
 	 - Fill bottom-up, from rightmost right endpoint to leftmost.
 	 - Recurrence: $$DP[i][t]=\begin{cases}DP[i-1][t] &\textrm{don't defend }i\\\max(DP[i-1][t], DP[j][t-c(v_i)]+(i-j))&\textrm{defend } i\end{cases}$$ where $j$ is the rightmost interval to left of leftmost interval of $i$
-	 - Base case is set as 
+	 - Base case is set as $DP[i][0]=0$ and $DP[0][t]=0$ for all $i$ and $t$ respectively 
+	 - We look at $DP[n][T]$ to find the max number of vertices we can save by considering all $n$ intervals and entire budget $b$
 
 
 
