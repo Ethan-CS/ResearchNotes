@@ -19,8 +19,8 @@ So:
  - At each time $t\leq (\ell-2)$, 
 
 ```
-new_disconnect(G, v) = |{u in G\{v} : }|
-DP(v, b, t) = 
+new_disconnect(G, v) = |{u in G\{v} : dist(G\{v}, u, r) = \infty > dist(G, u, r)}|
+DP(v, b, t) = 1 + new_disconnect(G, v) + max_{u in G\{v}}{DP(u, b-c(v, t), t)}
 ```
   
 
