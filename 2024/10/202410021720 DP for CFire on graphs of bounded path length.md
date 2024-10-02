@@ -12,6 +12,10 @@ Status : #triage
 
 ### Questions & thoughts:
 
+I have in mind a DP for CFire on $P_\ell$-free graphs. 
+
+$DP(C, v, b, t)$ - parameters represent: component containing fire, vertex, budget and time respectively. Dimensions $\mathcal{O}()$
+
 
 
 -----
