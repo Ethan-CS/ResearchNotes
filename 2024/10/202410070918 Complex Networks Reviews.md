@@ -83,13 +83,13 @@ Reviews are only in the conference system, I'll link them here:
 	 - [ ] Explain existing heuristics for FF, including mentioning state-of-the-art
  - [ ] Theorem 4, not proved, but there is space to do this
  - Typos etc, from reviewer 3:
-	- [ ] Theorem 1: "provided that (the) the root"
-	-  [ ] Theorem 3: is the "central node" the root?  
+	- [x] Theorem 1: "provided that (the) the root"
+	-  [x] Theorem 3: is the "central node" the root?  
 	- [ ] Proof of Theorem 3:  
         + [ ] "Observe that the input formula" instead of satisfying assignment?  
         + [ ] the reference for the NP-Completeness of 2N2P-SAT does not seem to be the right one, I did not find any mention of this problem in ref. 2. I think the right one is Higher-order matching in the linear lambda calculus in the absence of constants is NP-complete by R. Yoshinaka? (But I may have misread something in the former paper)  
-        + [ ] should k < k + 3m be k < n + 3m?  
-        + [ ] last sentence: "unsuccessful strategy for CFIRE"? (instead of 2N2P-SAT)  
+        + [x] should k < k + 3m be k < n + 3m?  
+        + [x] last sentence: "unsuccessful strategy for CFIRE"? (instead of 2N2P-SAT)  
         - [ ] Figure 1: you could maybe start from a small formula to derive the sea fan of the reduction?  
-	- [ ] First sentence of 4.1: "Here" instead of "He"?  
-	- [ ] First sentence of 4.2: ''*we* implemented heuristics"?
+	- [x] First sentence of 4.1: "Here" instead of "He"?  
+	- [x] First sentence of 4.2: ''*we* implemented heuristics"?
