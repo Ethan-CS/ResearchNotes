@@ -87,7 +87,8 @@ Reviews are only in the conference system, I'll link them here:
 	-  [x] Theorem 3: is the "central node" the root?  
 	- [ ] Proof of Theorem 3:  
         + [ ] "Observe that the input formula" instead of satisfying assignment?  
-        + [ ] the reference for the NP-Completeness of 2N2P-SAT does not seem to be the right one, I did not find any mention of this problem in ref. 2. I think the right one is Higher-order matching in the linear lambda calculus in the absence of constants is NP-complete by R. Yoshinaka? (But I may have misread something in the former paper)  
+        + [x] the reference for the NP-Completeness of 2N2P-SAT does not seem to be the right one, I did not find any mention of this problem in ref. 2. I think the right one is Higher-order matching in the linear lambda calculus in the absence of constants is NP-complete by R. Yoshinaka? (But I may have misread something in the former paper)  
+        + *This was a very helpful spot - I cited the wrong paper by Berman, used his 2007 paper but should have been 2003.*
         + [x] should k < k + 3m be k < n + 3m?  
         + [x] last sentence: "unsuccessful strategy for CFIRE"? (instead of 2N2P-SAT)  
         - [ ] Figure 1: you could maybe start from a small formula to derive the sea fan of the reduction?  
