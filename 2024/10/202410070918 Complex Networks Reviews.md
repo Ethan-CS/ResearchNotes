@@ -81,7 +81,7 @@ Reviews are only in the conference system, I'll link them here:
 	 - [ ] We emphasise distance from fire - could existing research on distribution of shortest paths in networks contribute to analytical results for these approaches? Something to add to future work?
 	 - [ ] Only consider modifications of heuristics from one existing paper - explain why
 	 - [ ] Explain existing heuristics for FF, including mentioning state-of-the-art
- - [ ] Theorem 4, not proved, but there is space to do this
+ - [x] Theorem 4, not proved, but there is space to do this
  - Typos etc, from reviewer 3:
 	- [x] Theorem 1: "provided that (the) the root"
 	-  [x] Theorem 3: is the "central node" the root?  
@@ -91,6 +91,6 @@ Reviews are only in the conference system, I'll link them here:
         + *This was a very helpful spot - I cited the wrong paper by Berman, used his 2007 paper but should have been 2003.*
         + [x] should k < k + 3m be k < n + 3m?  
         + [x] last sentence: "unsuccessful strategy for CFIRE"? (instead of 2N2P-SAT)  
-        - [ ] Figure 1: you could maybe start from a small formula to derive the sea fan of the reduction?  
+        - [x] Figure 1: you could maybe start from a small formula to derive the sea fan of the reduction?  
 	- [x] First sentence of 4.1: "Here" instead of "He"?  
 	- [x] First sentence of 4.2: ''*we* implemented heuristics"?
