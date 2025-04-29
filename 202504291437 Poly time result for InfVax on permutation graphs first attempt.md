@@ -40,7 +40,7 @@ Thus, an optimal strategy exists that only defends vertices from minimal separat
 			 - defence spread: add all vertices $v\in V\setminus (B_{t-1}\cup D_t)$ with a neighbour in $D_{t-1}$ to $D_t$ 
 			 - fire spread: add all vertices $v\in V\setminus (B_t\cup D_t)$ with a neighbour in $B_{t-1}$ to $B_t$
 		 - update $V(t, B_t, D_t)$
- There are at most $O(n^2)$ minimal separators and they can be enumerated in $O(n^3)$ time by lemma 1. There are $O(n)$ time steps; at each time step, there are $O(|S|^b)=O(n^{2b})$ choices for potential defence. Each state $B$ and $D$ have $O(2^n)$ possible combinations in general, but we bound burning and defence fronts by $O(n^2)$ through incremental spread to avoid enumerating all of these states. Hence the total runtime: states $O(n^{2b+3})$, per-state processing $O(n)$ (defence and fire spread), so overall $O(n^{2b+4})$.
+ There are at most $O(n^2)$ minimal separators and they can be enumerated in $O(n^3)$ time by lemma 1. There are $O(n)$ time steps; at each time step, there are $O(|S|^b)=O(n^{2b})$ choices for potential defence. Each state $B$ and $D$ have $O(2^n)$ possible combinations in general, but we bound burning and defence fronts by $O(n^2)$ by lemma 2, avoiding enumerating all of these states. Hence the total runtime: states $O(n^{2b+3})$, per-state processing $O(n)$ (defence and fire spread), so overall $O(n^{2b+4})$.
 
 -----
  
