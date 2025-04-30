@@ -12,7 +12,7 @@ Status : #triage
 
 ### Questions & thoughts:
 
-**Lemma 0:** For any minimal separator $S$ in a permutation graph $G$, defending at least one vertex $u\in S$ is sufficient for defence to spread to all vertices in $S$ within $|S|-1$ turns, provi
+**Lemma 0:** For any minimal separator $S$ in a permutation graph $G$, if $S$ does not contain a burning vertex at turn $t$, defending at least one vertex $u\in S$ is sufficient for defence to spread to all vertices in $S$ by turn $t+|S|-1$.
 
 
 **Lemma 1:** In a permutation graph G=(V,E)G=(V,E), there are at most $O(n^2)$ minimal separators [(Corollary 3.1, Bodlaender, Kloks, Kratsch 1992)](https://research.tue.nl/files/4297898/390171.pdf), and they are enumerable in polynomial time [(Lem. 3.1, Bodlaender, Kloks, Kratsch 1992)](https://research.tue.nl/files/4297898/390171.pdf)
