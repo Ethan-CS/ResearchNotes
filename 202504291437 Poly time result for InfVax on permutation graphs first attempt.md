@@ -12,6 +12,9 @@ Status : #triage
 
 ### Questions & thoughts:
 
+**Lemma 0:** For any minimal separator $S$ in a permutation graph $G$, defending at least one vertex $u\in S$ is sufficient for defence to spread to all vertices in $S$ within $|S|-1$ turns, provi
+
+
 **Lemma 1:** In a permutation graph G=(V,E)G=(V,E), there are at most $O(n^2)$ minimal separators [(Corollary 3.1, Bodlaender, Kloks, Kratsch 1992)](https://research.tue.nl/files/4297898/390171.pdf), and they are enumerable in polynomial time [(Lem. 3.1, Bodlaender, Kloks, Kratsch 1992)](https://research.tue.nl/files/4297898/390171.pdf)
 
 
@@ -20,9 +23,9 @@ Status : #triage
 **Proof.**  Suppose an optimal strategy defends a vertex $v$ not in any minimal separator. Let $t$ be the time step when $v$ is defended. Since $v$ is not in a minimal separator, its removal does not disconnect $G$. However, defending $v$ allows defence to spread to its neighbours. Consider the earliest time $t^\prime\geq t$ when the defence propagates to a vertex $u$ in a minimal separator $S$. Replace the defence of $v$ at time $t$ with a defence of $u$ at $t$. This substitution preserves the defensive spread to $u$ and potentially blocks more fire spread, as $S$ is a 'bottleneck' (define this; can we guarantee/justify this does at least no worse? what if v is adjacent to fire, so by defending u we may not clearly defend at least as many). By induction, all non-separator defences can be replaced with separator defences without reducing saved vertices [(Bodlaender, Kloks, Kratsch 1992), ](https://research.tue.nl/files/4297898/390171.pdf)[(Fomin, Heggernes, Jan van Leeuwen 2016).](https://www.sciencedirect.com/science/article/pii/S0304397515010853) (need to explain this better). Thus, an optimal strategy exists that only defends vertices from minimal separators (is this sufficient to show this?).
 
 **Proof (2nd attempt).** Let $G$ be a permutation graph and $S$ be the set of all minimal separators of $G$. Assume we have an optimal strategy $\sigma$ for InfVax on $G$ that defends a vertex $v$ that is not in any set in $S$. We construct a modified strategy $\sigma^\prime$ by replacing $v$ with a vertex $u$ that is in a minimal separator and claim our construction preserves optimality.
-(Base case). If no non-separator vertex is defended, i.e. no such $v$ exists, the claim is trivially true.
-(Inductive hypothesis) Assume that all strategies with $k$ non-separator defences can be replaced.
-()
+(Base case.) If no non-separator vertex is defended, i.e. no such $v$ exists, the claim is trivially true.
+(Inductive hypothesis.) Assume that all strategies with $k$ non-separator defences can be replaced.
+(Inductive step.) Consider an optimal strategy $\sigma$ with $k+1$ non-separator defences, including a vertex $v$ that was part of direct defence at time $t$. As $v$ is not part of a minimal separator, its removal does not disconnect $G$, so let $u$ be the first vertex in a minimal separator in $S$ reachable by fire after $t$. If we defend $u$ instead of $v$ at $t$, 
 
 
 **Theorem.** InfVax on permutation graphs is polynomial-time solvable.
